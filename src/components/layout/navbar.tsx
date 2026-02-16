@@ -24,8 +24,8 @@ export const Navbar = () => {
         <Image 
           src={LOGO_URL} 
           alt="Ayme Varela" 
-          width={208} 
-          height={208} 
+          width={512} 
+          height={512} 
           className="h-40 md:h-52 w-auto object-contain brightness-0 invert drop-shadow-md" 
           priority
           quality={100}
@@ -37,8 +37,8 @@ export const Navbar = () => {
             <Image 
               src={SMALL_LOGO_URL} 
               alt="Logo" 
-              width={48} 
-              height={48} 
+              width={128} 
+              height={128} 
               className="h-10 md:h-12 w-auto object-contain" 
               quality={100}
             />

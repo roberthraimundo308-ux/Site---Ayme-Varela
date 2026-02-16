@@ -19,8 +19,8 @@ export const Footer = () => {
             <Image 
               src={LOGO_URL} 
               alt="Logo" 
-              width={128} 
-              height={128} 
+              width={512} 
+              height={512} 
               className="h-32 w-auto brightness-0 invert" 
               quality={100}
             />
