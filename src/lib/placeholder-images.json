@@ -1,3 +1,214 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "logo-main",
+      "description": "SweetArt Atelier main logo",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1uuC11i_ocwuZj5zqyqJjz-UjQmyIBS-l",
+      "imageHint": "logo text"
+    },
+    {
+      "id": "logo-small",
+      "description": "SweetArt Atelier small logo",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1zu7AyMr1M6ouW3j4GmTjaJD8odFc47Mc",
+      "imageHint": "logo monogram"
+    },
+    {
+      "id": "hero-bg",
+      "description": "Hero background image of a cake",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1xYBKePwEBX4NzmYAUyw8jXP0tvZeyoaI",
+      "imageHint": "cake detail"
+    },
+    {
+      "id": "order-bg",
+      "description": "Order form background image",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1VNJ911k8uaovAH4TeQhGaIUWZx0Hmk3q",
+      "imageHint": "cake decoration"
+    },
+    {
+      "id": "product-1-main",
+      "description": "Main image for product Sonho de Valsa 1",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1snCVAPyLL_QzdfNvlTs62yQxu9jaz2yN",
+      "imageHint": "cake strawberries"
+    },
+    {
+      "id": "product-1-gallery-1",
+      "description": "Gallery image for product Sonho de Valsa 1",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1VNJ911k8uaovAH4TeQhGaIUWZx0Hmk3q",
+      "imageHint": "cake closeup"
+    },
+    {
+      "id": "product-1-gallery-2",
+      "description": "Gallery image for product Sonho de Valsa 1",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1dB5_RTAvpglXuwJ5u0lfjUZAozDHY_Vd",
+      "imageHint": "cake top"
+    },
+    {
+      "id": "product-1-gallery-3",
+      "description": "Gallery image for product Sonho de Valsa 1",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1cgAV1Ov7kCMXbONszZiq3POlufQE-sjc",
+      "imageHint": "cake slice"
+    },
+    {
+      "id": "product-2-main",
+      "description": "Main image for product Sonho de Valsa 2",
+      "imageUrl": "https://lh3.googleusercontent.com/d/14ipoMX00Ism_CyhgQehtRP_TLPyEOSDA",
+      "imageHint": "chocolate cake"
+    },
+    {
+      "id": "product-2-gallery-1",
+      "description": "Gallery image for product Sonho de Valsa 2",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1nZAGhjcOmW2apjfWp67vSD9ft_A7u6QP",
+      "imageHint": "cake flowers"
+    },
+    {
+      "id": "product-2-gallery-2",
+      "description": "Gallery image for product Sonho de Valsa 2",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1n554EaAOdfMMiYGjMVen0NBqn2tQoRNS",
+      "imageHint": "cake side"
+    },
+    {
+      "id": "product-2-gallery-3",
+      "description": "Gallery image for product Sonho de Valsa 2",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1AV7bXxBYOE3HfiPZ8fxUefvOCDbu5D2U",
+      "imageHint": "cake aerial"
+    },
+    {
+      "id": "product-3-main",
+      "description": "Main image for product Sonho de Valsa 3",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1HrHFWyHIodmP8Lz5AcFnYvom25fY-XxU",
+      "imageHint": "cake pink"
+    },
+    {
+      "id": "product-3-gallery-1",
+      "description": "Gallery image for product Sonho de Valsa 3",
+      "imageUrl": "https://lh3.googleusercontent.com/d/13dHGbZ9a6MyVj3MIZMFUCwEidVwCPaJ1",
+      "imageHint": "cake detail"
+    },
+    {
+      "id": "product-3-gallery-2",
+      "description": "Gallery image for product Sonho de Valsa 3",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1XZyeTgoEDyvZcDOdueNkR1TtmzeNRlRy",
+      "imageHint": "cake top"
+    },
+    {
+      "id": "product-3-gallery-3",
+      "description": "Gallery image for product Sonho de Valsa 3",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1GSpLCoh4BC8_fPjYyy3oJBCO8gRrv4-f",
+      "imageHint": "cake sprinkles"
+    },
+    {
+      "id": "product-4-main",
+      "description": "Main image for product Sonho de Valsa 4",
+      "imageUrl": "https://lh3.googleusercontent.com/d/11-YsMvkoT_KgeUzovjRs_DIpz72qBIby",
+      "imageHint": "cake white"
+    },
+    {
+      "id": "product-4-gallery-1",
+      "description": "Gallery image for product Sonho de Valsa 4",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1pzzPLWplW3WRrksc0s5qkupuQ99Yizn1",
+      "imageHint": "cake decoration"
+    },
+    {
+      "id": "product-4-gallery-2",
+      "description": "Gallery image for product Sonho de Valsa 4",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1TIoqSi83V4ib6jgELV-O7AZ8N-3yj982",
+      "imageHint": "cake detail"
+    },
+    {
+      "id": "product-4-gallery-3",
+      "description": "Gallery image for product Sonho de Valsa 4",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1qfObJA-HjUTQ5sr_tus_hueUPRoq51pZ",
+      "imageHint": "cake flowers"
+    },
+    {
+      "id": "product-5-main",
+      "description": "Main image for product Sonho de Valsa 5",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1fOChb9u2sJog679ApfgKTF6T-9PTeWkv",
+      "imageHint": "cake flowers"
+    },
+    {
+      "id": "product-5-gallery-1",
+      "description": "Gallery image for product Sonho de Valsa 5",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1oRquR3kNMA_miAqj0y7VKhzCpztISRJo",
+      "imageHint": "cake white"
+    },
+    {
+      "id": "product-5-gallery-2",
+      "description": "Gallery image for product Sonho de Valsa 5",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1yEhA1AdlR6jRQZpN06UWxsbdvcCwo1IO",
+      "imageHint": "cake top"
+    },
+    {
+      "id": "product-5-gallery-3",
+      "description": "Gallery image for product Sonho de Valsa 5",
+      "imageUrl": "https://lh3.googleusercontent.com/d/10AkDu7bjzENqE2oPg-2v4I2mVBTw-jUS",
+      "imageHint": "cake detail"
+    },
+    {
+      "id": "product-6-main",
+      "description": "Main image for product Sonho de Valsa 6",
+      "imageUrl": "https://lh3.googleusercontent.com/d/15QVssGzPXzQVyKKRor7NLRYViniOqneq",
+      "imageHint": "cake chocolate"
+    },
+    {
+      "id": "product-6-gallery-1",
+      "description": "Gallery image for product Sonho de Valsa 6",
+      "imageUrl": "https://lh3.googleusercontent.com/d/170HoE49eUJxWxdsHxLsDjZpic4OzRxBm",
+      "imageHint": "cake strawberries"
+    },
+    {
+      "id": "product-6-gallery-2",
+      "description": "Gallery image for product Sonho de Valsa 6",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1XhsobDV1CTf3I86uM-I3V4ZCdfSsP9uX",
+      "imageHint": "cake detail"
+    },
+    {
+      "id": "product-6-gallery-3",
+      "description": "Gallery image for product Sonho de Valsa 6",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1YcUZ97LdtReWSRAcSdYX3KPBe9Gh9OXL",
+      "imageHint": "cake side"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Testimonial screenshot 1",
+      "imageUrl": "https://lh3.googleusercontent.com/d/12wOBT7rUzv1BFNBbCttt59tskqzFoUHj",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Testimonial screenshot 2",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1HEHv4Cw-l1QOhou1Ie3aHV4lUY1-g6cD",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Testimonial screenshot 3",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1z3CKVmrkTUNnFIGagRn15NiBvOLb3UoL",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Testimonial screenshot 4",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1dOSX4XdTPEZJ3An_mu4ForVdMPsiVDwr",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Testimonial screenshot 5",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1NwNxNA1mPZ95UOfD1gFgzx_cMYt36vN-",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "testimonial-6",
+      "description": "Testimonial screenshot 6",
+      "imageUrl": "https://lh3.googleusercontent.com/d/18YnBf4ov4OgTjDsKeDXeG4fGjKsiVI4v",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "testimonial-7",
+      "description": "Testimonial screenshot 7",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1C8qCzL8RZtaML7T5czjGiftckFguHC2O",
+      "imageHint": "chat message"
+    }
+  ]
 }

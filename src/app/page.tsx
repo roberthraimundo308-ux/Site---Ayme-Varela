@@ -1,3 +1,41 @@
+'use client';
+import { useState } from 'react';
+import type { Product } from '@/lib/constants';
+
+import { Navbar } from '@/components/layout/navbar';
+import { Hero } from '@/components/sections/hero';
+import { Vitrine } from '@/components/sections/vitrine';
+import { Gallery } from '@/components/sections/gallery';
+import { OrderFormSection } from '@/components/sections/order';
+import { Testimonials } from '@/components/sections/testimonials';
+import { Footer } from '@/components/layout/footer';
+import { ProductDetailModal } from '@/components/product-detail-modal';
+import { AiSuggester } from '@/components/sections/ai-suggester';
+import { AnimatePresence } from 'framer-motion';
+
 export default function Home() {
-  return <></>;
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+
+  return (
+    <div className="min-h-screen font-sans">
+      <Navbar />
+      <main>
+        <Hero />
+        <Vitrine onProductSelect={setSelectedProduct} />
+        <Gallery />
+        <AiSuggester />
+        <OrderFormSection />
+        <Testimonials />
+      </main>
+      <Footer />
+      <AnimatePresence>
+        {selectedProduct && (
+          <ProductDetailModal
+            product={selectedProduct}
+            onClose={() => setSelectedProduct(null)}
+          />
+        )}
+      </AnimatePresence>
+    </div>
+  );
 }
