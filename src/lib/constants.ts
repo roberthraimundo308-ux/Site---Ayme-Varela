@@ -52,7 +52,6 @@ export const MENU_ITEMS = [
   { label: 'Home', id: 'home' },
   { label: 'Vitrine', id: 'vitrine' },
   { label: 'Galeria', id: 'galeria' },
-  { label: 'Sugestão AI', id: 'ai-suggester' },
   { label: 'Pedido', id: 'pedido' },
   { label: 'Depoimentos', id: 'depoimentos' }
 ];

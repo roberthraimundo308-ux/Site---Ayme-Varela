@@ -38,7 +38,7 @@ export const OrderFormSection = () => {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
   };
 
-  const commonInputClass = "w-full py-3 px-6 rounded-full border border-stone-200 bg-white/50 focus:border-primary focus:ring-primary outline-none text-[10px] font-bold uppercase tracking-widest font-sans transition-all";
+  const commonInputClass = "w-full py-3 px-6 rounded-full border border-stone-200 bg-white/50 focus:border-primary focus:ring-primary outline-none text-[10px] font-bold uppercase tracking-widest font-sans transition-all placeholder:font-medium placeholder:tracking-[0.5em]";
 
   return (
     <section id="pedido" className="relative py-24 overflow-hidden bg-white border-y border-stone-100">
@@ -118,7 +118,7 @@ export const OrderFormSection = () => {
                     <Input type="text" className={commonInputClass} value={formData.nome} onChange={(e) => setFormData({...formData, nome: e.target.value})} />
                   </div>
                   <div className="p-5 bg-amber-50/50 rounded-2xl border border-accent/20">
-                    <p className="text-xs text-primary leading-relaxed font-body font-medium italic">
+                    <p className="text-sm text-primary leading-relaxed font-body font-medium italic">
                       ✨ Já tem uma foto de modelo? Após finalizar, você poderá enviá-la diretamente pelo nosso WhatsApp para referência!
                     </p>
                   </div>

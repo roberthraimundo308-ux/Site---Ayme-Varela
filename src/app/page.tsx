@@ -10,7 +10,6 @@ import { OrderFormSection } from '@/components/sections/order';
 import { Testimonials } from '@/components/sections/testimonials';
 import { Footer } from '@/components/layout/footer';
 import { ProductDetailModal } from '@/components/product-detail-modal';
-import { AiSuggester } from '@/components/sections/ai-suggester';
 import { AnimatePresence } from 'framer-motion';
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
         <Hero />
         <Vitrine onProductSelect={setSelectedProduct} />
         <Gallery />
-        <AiSuggester />
         <OrderFormSection />
         <Testimonials />
       </main>
