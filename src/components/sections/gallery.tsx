@@ -1,17 +1,19 @@
 'use client';
-import { useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ALL_GALLERY_IMAGES } from '@/lib/constants';
 import { SectionTitle } from '../ui/section-title';
 
 export const Gallery = () => {
-  const shuffledGallery = useMemo(() => {
+  const [gallery, setGallery] = useState(ALL_GALLERY_IMAGES);
+
+  useEffect(() => {
     const shuffled = [...ALL_GALLERY_IMAGES];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return shuffled;
+    setGallery(shuffled);
   }, []);
 
   return (
@@ -19,7 +21,7 @@ export const Gallery = () => {
       <SectionTitle title="Galeria de Sonhos" subtitle="Siga-nos @ayme_varela" />
       <div className="w-full overflow-hidden">
         <div className="flex gap-6 animate-scroll-horizontal">
-          {[...shuffledGallery, ...shuffledGallery].map((img, i) => (
+          {[...gallery, ...gallery].map((img, i) => (
             <div key={`gal-img-${i}`} className="flex-shrink-0 w-72 h-72 rounded-xl overflow-hidden shadow-lg border border-stone-100 bg-white group relative">
                <Image 
                  src={img} 
