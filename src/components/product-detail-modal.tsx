@@ -47,7 +47,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         >
           <X size={24} className="text-primary" />
         </button>
-        <div className="w-full md:w-1/2 min-h-[400px] relative bg-stone-100">
+        <div className="w-full md:w-1/2 min-h-[550px] relative bg-stone-100">
           <Image
             src={product.gallery[currentIdx]}
             alt={`${product.name} - image ${currentIdx + 1}`}

@@ -22,6 +22,7 @@ export const Footer = () => {
               width={128} 
               height={128} 
               className="h-32 w-auto brightness-0 invert" 
+              quality={100}
             />
             <p className="text-white/50 text-sm leading-relaxed max-w-xs italic font-sans">
               Elegância e sabor em cada detalhe. Onde a confeitaria se torna arte para celebrar os seus melhores momentos.
