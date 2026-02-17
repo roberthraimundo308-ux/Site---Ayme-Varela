@@ -37,12 +37,12 @@ export const Navbar = () => {
           className="h-40 md:h-52 w-auto object-contain brightness-0 invert drop-shadow-md"
           priority
           quality={100}
-          sizes="33vw"
+          sizes="512px"
         />
       </div>
       <nav className={cn("w-full transition-all duration-500 ease-in-out border-b z-50", scrolled ? "fixed top-0 left-0 bg-white/20 backdrop-blur-lg border-stone-200/30 shadow-sm py-4" : "relative bg-transparent border-transparent py-6")}>
         <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-center relative min-h-[40px]">
-          <div className={cn("absolute left-6 top-1/2 -translate-y-1/2 transition-all duration-500", scrolled ? "opacity-100" : "opacity-0 pointer-events-none")}>
+          <div className={cn("md:absolute md:left-6 md:top-1/2 md:-translate-y-1/2 transition-all duration-500", scrolled ? "opacity-100" : "opacity-0 pointer-events-none")}>
             <Image
               src={SMALL_LOGO_URL}
               alt="Logo"
