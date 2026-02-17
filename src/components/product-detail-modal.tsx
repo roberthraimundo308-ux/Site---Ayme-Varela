@@ -46,7 +46,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 20 }}
-        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row max-h-[90vh] overflow-hidden"
+        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row max-h-[90vh] md:h-[600px] overflow-hidden"
       >
         <button
           onClick={onClose}
@@ -55,13 +55,13 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         >
           <X size={24} className="text-primary" />
         </button>
-        <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center">
-          <div className="w-full aspect-w-1 aspect-h-1">
+        <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center justify-center flex-shrink-0 aspect-square md:aspect-auto">
+          <div className="w-full h-full relative">
              <Image
                 src={product.gallery[currentIdx]}
                 alt={`${product.name} - image ${currentIdx + 1}`}
                 fill
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain p-4"
                 key={currentIdx}
                 sizes="50vw"
                 quality={100}
