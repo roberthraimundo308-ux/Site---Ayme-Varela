@@ -53,7 +53,7 @@ export const OrderFormSection = () => {
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-background to-transparent z-[1]"></div>
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent z-[1]"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <SectionTitle title="Faça seu pedido" subtitle={step === 1 ? "Personalize o seu momento doce" : "Escolha a data da celebração"} />
+        <SectionTitle title="Faça seu pedido" subtitle={step === 1 ? "personalize o seu momento" : "Escolha a data da celebração"} />
         <motion.div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-xl p-8 md:p-12 shadow-2xl border border-stone-100/50">
           <AnimatePresence mode="wait">
             {step === 1 ? (
