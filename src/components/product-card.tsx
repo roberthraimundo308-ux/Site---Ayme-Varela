@@ -11,14 +11,16 @@ type ProductCardProps = {
 export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
   return (
     <div className="bg-white rounded-xl border border-primary/10 hover:border-primary hover:shadow-2xl transition-all duration-500 flex flex-col text-left h-full select-none group">
-      <div className="relative w-full aspect-square rounded-t-xl overflow-hidden">
-        <Image 
-          src={product.image} 
-          alt={product.name} 
-          fill
-          sizes="(max-width: 640px) 50vw, 33vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-500" 
-        />
+      <div className="p-4 pb-0">
+        <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+          <Image 
+            src={product.image} 
+            alt={product.name} 
+            fill
+            sizes="(max-width: 640px) 50vw, 33vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-500" 
+          />
+        </div>
       </div>
       <div className="p-4 pb-6 w-full flex flex-col flex-grow">
         <h3 className="font-headline text-xl sm:text-2xl lg:text-3xl text-primary mb-2 leading-tight tracking-wide">{product.name}</h3>
