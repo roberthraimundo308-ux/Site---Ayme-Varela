@@ -15,15 +15,15 @@ export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
         <div className="relative w-full aspect-square rounded-lg overflow-hidden">
           <Image 
             src={product.image} 
-            alt={product.name} 
+            alt={product.shortDesc} 
             fill
             sizes="(max-width: 640px) 50vw, 33vw"
-            className="object-cover group-hover:scale-105 transition-transform duration-500" 
+            className="object-cover transition-transform duration-500" 
           />
         </div>
       </div>
       <div className="p-4 pb-6 w-full flex flex-col flex-grow">
-        <h3 className="font-headline text-xl sm:text-2xl lg:text-3xl text-primary mb-2 leading-tight tracking-wide">{product.name}</h3>
+        {product.name && <h3 className="font-headline text-xl sm:text-2xl lg:text-3xl text-primary mb-2 leading-tight tracking-wide">{product.name}</h3>}
         <p className="text-primary/60 text-xs font-body mb-6 md:mb-10 leading-relaxed line-clamp-2">{product.shortDesc}</p>
         <div className="mt-auto w-full flex justify-center">
           <StandardButton 

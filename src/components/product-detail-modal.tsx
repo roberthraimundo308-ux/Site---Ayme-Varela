@@ -27,7 +27,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
   };
 
   const handleWhatsappOrder = () => {
-    const message = `Olá! Tenho interesse no produto *${product.name}*. Gostaria de fazer uma encomenda.`;
+    const message = `Olá! Tenho interesse no produto *${product.name || product.shortDesc}*. Gostaria de fazer uma encomenda.`;
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -56,13 +56,12 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
           <X size={24} className="text-primary" />
         </button>
         <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center justify-center flex-shrink-0 rounded-l-2xl">
-           <div className="relative w-full">
+           <div className="relative w-full aspect-[4/5]">
              <Image
                 src={product.gallery[currentIdx]}
-                alt={`${product.name} - image ${currentIdx + 1}`}
-                width={800}
-                height={960}
-                className="w-full h-auto rounded-l-2xl"
+                alt={`${product.shortDesc} - image ${currentIdx + 1}`}
+                fill
+                className="object-cover rounded-l-2xl"
                 key={currentIdx}
                 sizes="50vw"
                 quality={100}
@@ -100,9 +99,9 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         </div>
         <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col overflow-y-auto">
           <div>
-            <h2 className="font-script text-5xl md:text-7xl text-primary mb-6 leading-none">
+            {product.name && <h2 className="font-script text-5xl md:text-7xl text-primary mb-6 leading-none">
               {product.name}
-            </h2>
+            </h2>}
             <div className="space-y-6">
               <div>
                 <h4 className="text-[10px] font-black uppercase tracking-widest text-stone-400 mb-2 font-sans">
@@ -112,7 +111,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
                   "{product.fullDesc}"
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-4 border-t border-stone-100 pt-6">
+              <div className="grid grid-cols-2 gap-4 border-t pt-6">
                 <div>
                   <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-stone-400 mb-1 font-sans flex items-center gap-1.5">
                     <CalendarIcon size={12} /> Tamanho
@@ -129,7 +128,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
             </div>
           </div>
           {product.id >= 100 && (
-            <div className="mt-8 pt-8 border-t border-stone-100">
+            <div className="mt-8 pt-8 border-t">
               <StandardButton 
                 onClick={handleWhatsappOrder}
                 className="w-full"
