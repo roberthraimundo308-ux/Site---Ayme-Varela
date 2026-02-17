@@ -10,8 +10,8 @@ type ProductCardProps = {
 
 export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
   return (
-    <div className="bg-white rounded-xl border border-primary/10 hover:border-primary hover:shadow-2xl transition-all duration-500 flex flex-col text-left h-full select-none group overflow-hidden">
-      <div className="relative w-full aspect-square">
+    <div className="bg-white rounded-xl border border-primary/10 hover:border-primary hover:shadow-2xl transition-all duration-500 flex flex-col text-left h-full select-none group">
+      <div className="relative w-full aspect-square rounded-t-xl overflow-hidden">
         <Image 
           src={product.image} 
           alt={product.name} 
