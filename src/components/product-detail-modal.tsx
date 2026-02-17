@@ -55,13 +55,13 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         >
           <X size={24} className="text-primary" />
         </button>
-        <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center justify-center flex-shrink-0 rounded-l-2xl">
-           <div className="relative w-full aspect-[4/5]">
+        <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center justify-center flex-shrink-0 rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
+           <div className="relative w-full h-full">
              <Image
                 src={product.gallery[currentIdx]}
                 alt={`${product.shortDesc} - image ${currentIdx + 1}`}
                 fill
-                className="object-cover rounded-l-2xl"
+                className="object-contain"
                 key={currentIdx}
                 sizes="50vw"
                 quality={100}
