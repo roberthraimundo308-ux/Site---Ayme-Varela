@@ -5,6 +5,7 @@ import type { Product } from '@/lib/constants';
 import { Navbar } from '@/components/layout/navbar';
 import { Hero } from '@/components/sections/hero';
 import { Vitrine } from '@/components/sections/vitrine';
+import { OtherProducts } from '@/components/sections/other-products';
 import { Gallery } from '@/components/sections/gallery';
 import { OrderFormSection } from '@/components/sections/order';
 import { Testimonials } from '@/components/sections/testimonials';
@@ -21,6 +22,7 @@ export default function Home() {
       <main>
         <Hero />
         <Vitrine onProductSelect={setSelectedProduct} />
+        <OtherProducts onProductSelect={setSelectedProduct} />
         <Gallery />
         <OrderFormSection />
         <Testimonials />

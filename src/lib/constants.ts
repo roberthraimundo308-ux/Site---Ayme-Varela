@@ -36,6 +36,12 @@ export const PRODUCTS: Product[] = [
   { id: 6, name: "Sonho de Valsa", fullDesc: COMMON_DESC, sizes: "50 pedaços", doughs: "Preta", image: findImage('product-6-main'), gallery: [findImage('product-6-main'), findImage('product-6-gallery-1'), findImage('product-6-gallery-2'), findImage('product-6-gallery-3')] }
 ];
 
+export const OTHER_PRODUCTS: Product[] = [
+  { id: 101, name: "Pudim de Leite", shortDesc: "Pudim de leite condensado cremoso com calda de caramelo.", fullDesc: "Um clássico irresistível, nosso pudim de leite é feito com os melhores ingredientes para uma textura perfeitamente cremosa e uma calda de caramelo no ponto.", sizes: "Serve 8-10 pessoas", doughs: "Não se aplica", image: findImage('pudim-main'), gallery: [findImage('pudim-main'), findImage('pudim-gallery-1')] },
+  { id: 102, name: "Bolo de Pote", shortDesc: "Camadas de bolo fofinho e recheio cremoso, direto no pote.", fullDesc: "Praticidade e sabor em um só lugar. Nossos bolos de pote vêm em diversos sabores, com camadas generosas de bolo e recheios artesanais.", sizes: "250ml", doughs: "Variadas", image: findImage('jar-cake-main'), gallery: [findImage('jar-cake-main'), findImage('jar-cake-gallery-1')] },
+  { id: 103, name: "Bolo de Bolacha", shortDesc: "Aconchego em forma de bolo, com bolacha e creme especial.", fullDesc: "Uma receita de família que atravessa gerações. Camadas de bolacha maria mergulhadas em café e um creme de chocolate aveludado.", sizes: "Serve 12 pessoas", doughs: "Não se aplica", image: findImage('biscuit-cake-main'), gallery: [findImage('biscuit-cake-main'), findImage('biscuit-cake-gallery-1')] },
+];
+
 export const ALL_GALLERY_IMAGES = PRODUCTS.flatMap(p => p.gallery || [p.image]);
 export const GALLERY_CAROUSEL_IMAGES = PRODUCTS.map(p => p.image);
 

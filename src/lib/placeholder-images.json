@@ -209,6 +209,42 @@
       "description": "Testimonial screenshot 7",
       "imageUrl": "https://lh3.googleusercontent.com/d/1C8qCzL8RZtaML7T5czjGiftckFguHC2O",
       "imageHint": "chat message"
+    },
+    {
+      "id": "pudim-main",
+      "description": "Main image for Pudim de Leite",
+      "imageUrl": "https://images.unsplash.com/photo-1619186596463-baa231b56fa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwdWRkaW5nJTIwZGVzc2VydHxlbnwwfHx8fDE3NzEzMzQ3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pudding dessert"
+    },
+    {
+      "id": "pudim-gallery-1",
+      "description": "Gallery image for Pudim de Leite",
+      "imageUrl": "https://images.unsplash.com/photo-1724116380693-52da975b9bf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwdWRkaW5nJTIwc2xpY2V8ZW58MHx8fHwxNzcxMzM0NzkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pudding slice"
+    },
+    {
+      "id": "jar-cake-main",
+      "description": "Main image for Bolo de Pote",
+      "imageUrl": "https://images.unsplash.com/photo-1671888774163-74964b9e78e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8amFyJTIwY2FrZXxlbnwwfHx8fDE3NzEzMzQ3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jar cake"
+    },
+    {
+      "id": "jar-cake-gallery-1",
+      "description": "Gallery image for Bolo de Pote",
+      "imageUrl": "https://images.unsplash.com/photo-1593545024944-b3c74435b9f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkZXNzZXJ0JTIwamFyfGVufDB8fHx8MTc3MTMzNDc4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dessert jar"
+    },
+    {
+      "id": "biscuit-cake-main",
+      "description": "Main image for Bolo de Bolacha",
+      "imageUrl": "https://images.unsplash.com/photo-1598963258851-cbd0f55856e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiaXNjdWl0JTIwY2FrZXxlbnwwfHx8fDE3NzEzMzQ3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "biscuit cake"
+    },
+    {
+      "id": "biscuit-cake-gallery-1",
+      "description": "Gallery image for Bolo de Bolacha",
+      "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc3MTMyOTk1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate cake"
     }
   ]
 }
