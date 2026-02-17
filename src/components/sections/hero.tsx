@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { HERO_BG } from '@/lib/constants';
+import { HERO_BG, HERO_BG_MOBILE } from '@/lib/constants';
 
 export const Hero = () => {
   const scrollToVitrine = () => {
@@ -13,10 +13,19 @@ export const Hero = () => {
         src={HERO_BG}
         alt="Elegant cake background"
         fill
-        className="object-cover object-left md:object-center"
+        className="object-cover object-left md:object-center hidden md:block"
         quality={100}
         priority
         data-ai-hint="cake detail"
+      />
+      <Image 
+        src={HERO_BG_MOBILE}
+        alt="Elegant cake background"
+        fill
+        className="object-cover object-center block md:hidden"
+        quality={100}
+        priority
+        data-ai-hint="cake vertical"
       />
       <div className="absolute inset-0 bg-primary/30 z-10"></div>
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent z-20"></div>
@@ -31,3 +40,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+    

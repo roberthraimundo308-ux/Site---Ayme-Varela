@@ -19,6 +19,12 @@
       "imageHint": "cake detail"
     },
     {
+      "id": "hero-bg-mobile",
+      "description": "Hero background image of a cake for mobile",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1enYLkMQkiO1vrAe4HPuG9VVOpNcYgcKk",
+      "imageHint": "cake vertical"
+    },
+    {
       "id": "order-bg",
       "description": "Order form background image",
       "imageUrl": "https://lh3.googleusercontent.com/d/1VNJ911k8uaovAH4TeQhGaIUWZx0Hmk3q",
@@ -201,7 +207,7 @@
     {
       "id": "testimonial-6",
       "description": "Testimonial screenshot 6",
-      "imageUrl": "https://lh3.googleusercontent.com/d/18YnBf4ov4OgTjDsKeDXeG4fGjKsiVI4v",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1C8qCzL8RZtaML7T5czjGiftckFguHC2O",
       "imageHint": "chat message"
     },
     {

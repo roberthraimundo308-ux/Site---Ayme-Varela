@@ -12,9 +12,11 @@ const findImage = (id: string) => {
 export const LOGO_URL = findImage('logo-main');
 export const SMALL_LOGO_URL = findImage('logo-small');
 export const HERO_BG = findImage('hero-bg');
+export const HERO_BG_MOBILE = findImage('hero-bg-mobile');
 export const ORDER_BG = findImage('order-bg');
 
-const COMMON_DESC = "Massa leve e delicadamente umedecida, recheada com o cremoso Ninho e pedaços de Sonho de Valsa, finalizado com morangos frescos selecionados. Uma combinação equilibrada, sofisticada e simplesmente irresistível!";
+const COMMON_DESC = "Bolo de Sonho de valsa e ninho com morango";
+const FULL_DESC = "Massa leve e delicadamente umedecida, recheada com o cremoso Ninho e pedaços de Sonho de Valsa, finalizado com morangos frescos selecionados. Uma combinação equilibrada, sofisticada e simplesmente irresistível!";
 
 export interface Product {
   id: number;
@@ -28,12 +30,12 @@ export interface Product {
 }
 
 export const PRODUCTS: Product[] = [
-  { id: 1, name: "", shortDesc: "Bolo de Sonho de valsa e ninho com morango", fullDesc: COMMON_DESC, sizes: "30 pedaços", doughs: "Branca", image: findImage('product-1-main'), gallery: [findImage('product-1-main'), findImage('product-1-gallery-1'), findImage('product-1-gallery-2'), findImage('product-1-gallery-3')] },
-  { id: 2, name: "", shortDesc: "Bolo de Sonho de valsa e ninho com morango", fullDesc: COMMON_DESC, sizes: "40 pedaços", doughs: "Preta", image: findImage('product-2-main'), gallery: [findImage('product-2-main'), findImage('product-2-gallery-1'), findImage('product-2-gallery-2'), findImage('product-2-gallery-3')] },
-  { id: 3, name: "", shortDesc: "Bolo de Sonho de valsa e ninho com morango", fullDesc: COMMON_DESC, sizes: "Personalizado", doughs: "Mista", image: findImage('product-3-main'), gallery: [findImage('product-3-main'), findImage('product-3-gallery-1'), findImage('product-3-gallery-2'), findImage('product-3-gallery-3')] },
-  { id: 4, name: "", shortDesc: "Bolo de Sonho de valsa e ninho com morango", fullDesc: COMMON_DESC, sizes: "40 pedaços", doughs: "Branca", image: findImage('product-4-main'), gallery: [findImage('product-4-main'), findImage('product-4-gallery-1'), findImage('product-4-gallery-2'), findImage('product-4-gallery-3')] },
-  { id: 5, name: "", shortDesc: "Bolo de Sonho de valsa e ninho com morango", fullDesc: COMMON_DESC, sizes: "30 pedaços", doughs: "Mista", image: findImage('product-5-main'), gallery: [findImage('product-5-main'), findImage('product-5-gallery-1'), findImage('product-5-gallery-2'), findImage('product-5-gallery-3')] },
-  { id: 6, name: "", shortDesc: "Bolo de Sonho de valsa e ninho com morango", fullDesc: COMMON_DESC, sizes: "50 pedaços", doughs: "Preta", image: findImage('product-6-main'), gallery: [findImage('product-6-main'), findImage('product-6-gallery-1'), findImage('product-6-gallery-2'), findImage('product-6-gallery-3')] }
+  { id: 1, name: "", shortDesc: COMMON_DESC, fullDesc: FULL_DESC, sizes: "30 pedaços", doughs: "Branca", image: findImage('product-1-main'), gallery: [findImage('product-1-main'), findImage('product-1-gallery-1'), findImage('product-1-gallery-2'), findImage('product-1-gallery-3')] },
+  { id: 2, name: "", shortDesc: COMMON_DESC, fullDesc: FULL_DESC, sizes: "40 pedaços", doughs: "Preta", image: findImage('product-2-main'), gallery: [findImage('product-2-main'), findImage('product-2-gallery-1'), findImage('product-2-gallery-2'), findImage('product-2-gallery-3')] },
+  { id: 3, name: "", shortDesc: COMMON_DESC, fullDesc: FULL_DESC, sizes: "Personalizado", doughs: "Mista", image: findImage('product-3-main'), gallery: [findImage('product-3-main'), findImage('product-3-gallery-1'), findImage('product-3-gallery-2'), findImage('product-3-gallery-3')] },
+  { id: 4, name: "", shortDesc: COMMON_DESC, fullDesc: FULL_DESC, sizes: "40 pedaços", doughs: "Branca", image: findImage('product-4-main'), gallery: [findImage('product-4-main'), findImage('product-4-gallery-1'), findImage('product-4-gallery-2'), findImage('product-4-gallery-3')] },
+  { id: 5, name: "", shortDesc: COMMON_DESC, fullDesc: FULL_DESC, sizes: "30 pedaços", doughs: "Mista", image: findImage('product-5-main'), gallery: [findImage('product-5-main'), findImage('product-5-gallery-1'), findImage('product-5-gallery-2'), findImage('product-5-gallery-3')] },
+  { id: 6, name: "", shortDesc: COMMON_DESC, fullDesc: FULL_DESC, sizes: "50 pedaços", doughs: "Preta", image: findImage('product-6-main'), gallery: [findImage('product-6-main'), findImage('product-6-gallery-1'), findImage('product-6-gallery-2'), findImage('product-6-gallery-3')] }
 ];
 
 export const OTHER_PRODUCTS: Product[] = [
@@ -62,3 +64,5 @@ export const MENU_ITEMS = [
 ];
 
 export const WHATSAPP_NUMBER = "5547992861817";
+
+    
