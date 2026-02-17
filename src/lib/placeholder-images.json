@@ -233,30 +233,6 @@
       "description": "Gallery image for Pudim de Leite",
       "imageUrl": "https://lh3.googleusercontent.com/d/1-fbNCiel90K6jWcfgZSpKO62F17raoN9",
       "imageHint": "pudding detail"
-    },
-    {
-      "id": "jar-cake-main",
-      "description": "Main image for Bolo de Pote",
-      "imageUrl": "https://images.unsplash.com/photo-1671888774163-74964b9e78e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8amFyJTIwY2FrZXxlbnwwfHx8fDE3NzEzMzQ3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "jar cake"
-    },
-    {
-      "id": "jar-cake-gallery-1",
-      "description": "Gallery image for Bolo de Pote",
-      "imageUrl": "https://images.unsplash.com/photo-1593545024944-b3c74435b9f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkZXNzZXJ0JTIwamFyfGVufDB8fHx8MTc3MTMzNDc4OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dessert jar"
-    },
-    {
-      "id": "biscuit-cake-main",
-      "description": "Main image for Bolo de Bolacha",
-      "imageUrl": "https://images.unsplash.com/photo-1598963258851-cbd0f55856e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiaXNjdWl0JTIwY2FrZXxlbnwwfHx8fDE3NzEzMzQ3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "biscuit cake"
-    },
-    {
-      "id": "biscuit-cake-gallery-1",
-      "description": "Gallery image for Bolo de Bolacha",
-      "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc3MTMyOTk1NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "chocolate cake"
     }
   ]
 }
