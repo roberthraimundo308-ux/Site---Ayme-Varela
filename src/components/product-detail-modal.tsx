@@ -46,7 +46,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 20 }}
-        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row max-h-[90vh] overflow-hidden"
+        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row max-h-[90vh]"
       >
         <button
           onClick={onClose}
@@ -55,13 +55,14 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         >
           <X size={24} className="text-primary" />
         </button>
-        <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center justify-center flex-shrink-0">
-          <div className="relative w-full h-full">
+        <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center justify-center flex-shrink-0 rounded-l-2xl">
+           <div className="relative w-full">
              <Image
                 src={product.gallery[currentIdx]}
                 alt={`${product.name} - image ${currentIdx + 1}`}
-                fill
-                className="object-cover"
+                width={800}
+                height={960}
+                className="w-full h-auto rounded-l-2xl"
                 key={currentIdx}
                 sizes="50vw"
                 quality={100}
@@ -97,7 +98,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
             </>
           )}
         </div>
-        <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col">
+        <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col overflow-y-auto">
           <div>
             <h2 className="font-script text-5xl md:text-7xl text-primary mb-6 leading-none">
               {product.name}
