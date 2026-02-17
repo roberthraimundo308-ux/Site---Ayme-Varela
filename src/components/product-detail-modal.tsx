@@ -46,7 +46,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 20 }}
-        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row max-h-[90vh] overflow-y-auto"
+        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row max-h-[90vh] overflow-hidden"
       >
         <button
           onClick={onClose}
@@ -56,16 +56,17 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
           <X size={24} className="text-primary" />
         </button>
         <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center">
-          <Image
-            src={product.gallery[currentIdx]}
-            alt={`${product.name} - image ${currentIdx + 1}`}
-            width={600}
-            height={600}
-            className="w-full h-auto object-contain"
-            key={currentIdx}
-            sizes="50vw"
-            quality={100}
-          />
+          <div className="w-full aspect-w-1 aspect-h-1">
+             <Image
+                src={product.gallery[currentIdx]}
+                alt={`${product.name} - image ${currentIdx + 1}`}
+                fill
+                className="w-full h-full object-contain"
+                key={currentIdx}
+                sizes="50vw"
+                quality={100}
+              />
+          </div>
           {product.gallery.length > 1 && (
             <>
               <button
@@ -96,7 +97,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
             </>
           )}
         </div>
-        <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col">
+        <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col overflow-y-auto">
           <div className="flex-grow">
             <h2 className="font-script text-5xl md:text-7xl text-primary mb-6 leading-none">
               {product.name}
@@ -126,15 +127,17 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
               </div>
             </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-stone-100">
-            <StandardButton 
-              onClick={handleWhatsappOrder}
-              className="w-full"
-              icon={MessageCircle}
-            >
-              Pedir Agora
-            </StandardButton>
-          </div>
+          {product.id >= 100 && (
+            <div className="mt-8 pt-8 border-t border-stone-100">
+              <StandardButton 
+                onClick={handleWhatsappOrder}
+                className="w-full"
+                icon={MessageCircle}
+              >
+                Pedir Agora
+              </StandardButton>
+            </div>
+          )}
         </div>
       </motion.div>
     </motion.div>

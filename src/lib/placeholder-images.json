@@ -213,14 +213,26 @@
     {
       "id": "pudim-main",
       "description": "Main image for Pudim de Leite",
-      "imageUrl": "https://images.unsplash.com/photo-1619186596463-baa231b56fa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwdWRkaW5nJTIwZGVzc2VydHxlbnwwfHx8fDE3NzEzMzQ3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1qrpW-Lj0vOuEhqSytbFFExtwYDU8puU8",
       "imageHint": "pudding dessert"
     },
     {
       "id": "pudim-gallery-1",
       "description": "Gallery image for Pudim de Leite",
-      "imageUrl": "https://images.unsplash.com/photo-1724116380693-52da975b9bf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwdWRkaW5nJTIwc2xpY2V8ZW58MHx8fHwxNzcxMzM0NzkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1JniO3B7fEVaR0QADGJu7ctYuAcK_5Dy5",
       "imageHint": "pudding slice"
+    },
+    {
+      "id": "pudim-gallery-2",
+      "description": "Gallery image for Pudim de Leite",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1AYyV8AzhOGp6xg0PC-kCwIGMl_rCv4Y3",
+      "imageHint": "pudding closeup"
+    },
+    {
+      "id": "pudim-gallery-3",
+      "description": "Gallery image for Pudim de Leite",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1-fbNCiel90K6jWcfgZSpKO62F17raoN9",
+      "imageHint": "pudding detail"
     },
     {
       "id": "jar-cake-main",
