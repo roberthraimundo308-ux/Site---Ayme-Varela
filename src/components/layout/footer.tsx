@@ -23,10 +23,8 @@ export const Footer = () => {
               height={512} 
               className="h-32 w-auto brightness-0 invert" 
               quality={100}
+              sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <p className="text-white/50 text-sm leading-relaxed max-w-xs italic font-sans">
-              Elegância e sabor em cada detalhe. Onde a confeitaria se torna arte para celebrar os seus melhores momentos.
-            </p>
           </div>
           <div className="flex flex-col gap-8">
              <h4 className="text-[10px] font-bold uppercase tracking-[0.5em] text-white/30 font-sans">Navegação</h4>
