@@ -13,8 +13,8 @@ export const Hero = () => {
         src={HERO_BG}
         alt="Elegant cake background"
         fill
-        className="object-cover"
-        quality={80}
+        className="object-cover object-left md:object-center"
+        quality={100}
         priority
         data-ai-hint="cake detail"
       />
