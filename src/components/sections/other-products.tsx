@@ -18,7 +18,6 @@ export const OtherProducts = ({ onProductSelect }: OtherProductsProps) => {
               key={`other-card-${p.id}`} 
               product={p} 
               onSelect={onProductSelect} 
-              actionType="whatsapp" 
             />
           ))}
         </div>
