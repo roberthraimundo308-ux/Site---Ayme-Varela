@@ -14,7 +14,7 @@ const TestimonialsColumn = ({ images, duration = 15, className }: { images: stri
       className="flex flex-col gap-8 pb-8 bg-transparent"
     >
       {[...images, ...images].map((img, i) => (
-        <div key={`testi-${i}`} className="rounded-2xl border border-stone-100 bg-white shadow-lg shadow-primary/5 overflow-hidden w-full md:w-80">
+        <div key={`testi-${i}`} className="rounded-2xl border border-stone-100 bg-white shadow-lg shadow-primary/5 overflow-hidden w-full">
           <Image 
             src={img} 
             alt="WhatsApp testimonial screenshot" 
@@ -33,9 +33,9 @@ export const Testimonials = () => (
   <section id="depoimentos" className="bg-[#FAF7F2] py-24 relative overflow-hidden border-y border-stone-100">
     <div className="container z-10 mx-auto px-4 text-center">
       <SectionTitle title="Depoimentos" subtitle="O que dizem sobre nós" />
-      <div className="flex justify-center gap-10 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[850px] overflow-hidden">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[850px] overflow-hidden">
         <TestimonialsColumn images={TESTIMONIALS_IMAGES.slice(0, 3)} duration={25} />
-        <TestimonialsColumn images={TESTIMONIALS_IMAGES.slice(3, 7)} className="hidden md:block" duration={35} />
+        <TestimonialsColumn images={TESTIMONIALS_IMAGES.slice(3, 7)} duration={35} />
         <TestimonialsColumn images={TESTIMONIALS_IMAGES.slice(0, 4).reverse()} className="hidden lg:block" duration={30} />
       </div>
     </div>
