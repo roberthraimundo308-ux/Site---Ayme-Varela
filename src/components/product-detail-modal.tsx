@@ -46,7 +46,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 20 }}
-        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row max-h-[90vh]"
+        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row md:items-start max-h-[90vh]"
       >
         <button
           onClick={onClose}
@@ -55,18 +55,19 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         >
           <X size={24} className="text-primary" />
         </button>
-        <div className="w-full md:w-1/2 relative bg-stone-100 flex items-center justify-center flex-shrink-0 rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
-           <div className="relative w-full h-full">
-             <Image
-                src={product.gallery[currentIdx]}
-                alt={`${product.shortDesc} - image ${currentIdx + 1}`}
-                fill
-                className="object-contain"
-                key={currentIdx}
-                sizes="50vw"
-                quality={100}
-              />
-          </div>
+        
+        <div className="w-full md:w-1/2 relative bg-stone-100 flex-shrink-0 rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
+           <Image
+              src={product.gallery[currentIdx]}
+              alt={`${product.shortDesc} - image ${currentIdx + 1}`}
+              width={800}
+              height={800}
+              className="w-full h-auto object-contain rounded-t-2xl md:rounded-l-2xl"
+              key={currentIdx}
+              sizes="50vw"
+              quality={100}
+            />
+
           {product.gallery.length > 1 && (
             <>
               <button
@@ -97,6 +98,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
             </>
           )}
         </div>
+        
         <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col overflow-y-auto">
           <div>
             {product.name && <h2 className="font-script text-5xl md:text-7xl text-primary mb-6 leading-none">
