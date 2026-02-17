@@ -23,7 +23,7 @@ export const ProductCard = ({ product, onSelect }: ProductCardProps) => (
       <h3 className="font-headline text-2xl md:text-3xl text-primary mb-2 leading-tight tracking-wide">{product.name}</h3>
       <p className="text-primary/60 text-xs font-body mb-6 md:mb-10 leading-relaxed line-clamp-2">{product.shortDesc}</p>
       <div className="mt-auto w-full flex justify-center">
-        <StandardButton onClick={() => onSelect(product)} className="w-full py-2 px-6 md:py-3 md:px-10">
+        <StandardButton onClick={() => onSelect(product)} className="w-full text-[9px] tracking-[0.1em] py-2 px-4 md:text-[10px] md:tracking-[0.2em] md:py-3 md:px-10">
           VER DETALHES
         </StandardButton>
       </div>
