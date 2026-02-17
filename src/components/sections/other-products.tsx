@@ -14,7 +14,12 @@ export const OtherProducts = ({ onProductSelect }: OtherProductsProps) => {
         <SectionTitle title="Para mais produtos" subtitle="Outras delícias que adoçam a vida" />
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10">
           {OTHER_PRODUCTS.map((p) => (
-            <ProductCard key={`other-card-${p.id}`} product={p} onSelect={onProductSelect} />
+            <ProductCard 
+              key={`other-card-${p.id}`} 
+              product={p} 
+              onSelect={onProductSelect} 
+              actionType="whatsapp" 
+            />
           ))}
         </div>
       </div>
