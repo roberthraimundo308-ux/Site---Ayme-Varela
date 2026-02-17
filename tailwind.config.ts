@@ -98,8 +98,8 @@ export default {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'scroll-horizontal': 'scroll-horizontal 60s linear infinite',
-        'scroll-horizontal-reverse': 'scroll-horizontal-reverse 60s linear infinite',
+        'scroll-horizontal': 'scroll-horizontal 40s linear infinite',
+        'scroll-horizontal-reverse': 'scroll-horizontal-reverse 40s linear infinite',
       },
     },
   },

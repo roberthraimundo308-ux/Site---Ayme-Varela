@@ -37,6 +37,7 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const ALL_GALLERY_IMAGES = PRODUCTS.flatMap(p => p.gallery || [p.image]);
+export const GALLERY_CAROUSEL_IMAGES = PRODUCTS.map(p => p.image);
 
 export const TESTIMONIALS_IMAGES = [
   findImage('testimonial-1'),

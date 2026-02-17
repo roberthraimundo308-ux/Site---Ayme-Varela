@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { ALL_GALLERY_IMAGES } from '@/lib/constants';
+import { GALLERY_CAROUSEL_IMAGES } from '@/lib/constants';
 import { SectionTitle } from '../ui/section-title';
 
 export const Gallery = () => {
@@ -11,11 +11,11 @@ export const Gallery = () => {
   useEffect(() => {
     setIsMounted(true);
     // Shuffle only on the client
-    const shuffled = [...ALL_GALLERY_IMAGES].sort(() => Math.random() - 0.5);
+    const shuffled = [...GALLERY_CAROUSEL_IMAGES].sort(() => Math.random() - 0.5);
     setShuffledGallery(shuffled);
   }, []);
 
-  const galleryImages = isMounted ? shuffledGallery : ALL_GALLERY_IMAGES;
+  const galleryImages = isMounted ? shuffledGallery : GALLERY_CAROUSEL_IMAGES;
   const halfwayIndex = Math.ceil(galleryImages.length / 2);
   const firstRow = galleryImages.slice(0, halfwayIndex);
   const secondRow = galleryImages.slice(halfwayIndex);
