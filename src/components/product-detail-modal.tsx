@@ -29,7 +29,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 overflow-y-auto"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
       aria-modal="true"
       role="dialog"
     >
@@ -38,11 +38,11 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 20 }}
-        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row overflow-hidden border border-white/20"
+        className="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl flex flex-col md:flex-row md:overflow-hidden border border-white/20 max-h-[90vh] overflow-y-auto"
       >
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 z-20 p-2 bg-stone-100 hover:bg-stone-200 rounded-full transition-colors"
+          className="absolute top-4 right-4 md:top-6 md:right-6 z-20 p-2 bg-stone-100 hover:bg-stone-200 rounded-full transition-colors"
           aria-label="Close modal"
         >
           <X size={24} className="text-primary" />
@@ -53,7 +53,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
             alt={`${product.name} - image ${currentIdx + 1}`}
             width={600}
             height={600}
-            className="w-full h-auto"
+            className="w-full h-auto object-contain"
             key={currentIdx}
             sizes="50vw"
             quality={100}
@@ -85,7 +85,9 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
           </div>
         </div>
         <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-          <h2 className="font-script text-7xl text-primary mb-6 leading-none">{product.name}</h2>
+          <h2 className="font-script text-5xl md:text-7xl text-primary mb-6 leading-none">
+            {product.name}
+          </h2>
           <div className="space-y-6">
             <div>
               <h4 className="text-[10px] font-black uppercase tracking-widest text-stone-400 mb-2 font-sans">
