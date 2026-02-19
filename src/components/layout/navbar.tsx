@@ -11,7 +11,7 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 180);
+    const handleScroll = () => setScrolled(window.scrollY > 250);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -40,7 +40,7 @@ export const Navbar = () => {
           sizes="512px"
         />
       </div>
-      <nav className={cn("w-full transition-all duration-500 ease-in-out border-b z-50", scrolled ? "fixed top-0 left-0 bg-white/20 backdrop-blur-lg border-stone-200/30 shadow-sm py-4" : "relative bg-transparent border-transparent py-6")}>
+      <nav className={cn("w-full transition-all duration-500 ease-in-out border-b z-50 sticky top-0", scrolled ? "bg-white/20 backdrop-blur-lg border-stone-200/30 shadow-sm py-4" : "bg-transparent border-transparent py-6")}>
         <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-center relative min-h-[40px]">
           <div className={cn("md:absolute md:left-6 md:top-1/2 md:-translate-y-1/2 transition-all duration-500", scrolled ? "opacity-100" : "opacity-0 pointer-events-none")}>
             <Image
