@@ -503,6 +503,414 @@
       "description": "Gallery image 3 for new product 17",
       "imageUrl": "https://lh3.googleusercontent.com/d/17O_lVuWezWyj05VjVrboLvItRYLjcCRr",
       "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-18-main",
+      "description": "Main image for new product 18",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_21!/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fMjEhL1ByaW5jaXBhbC5wbmciLCJpYXQiOjE3NzE1OTgxOTgsImV4cCI6MTgwMzEzNDE5OH0.EUFPoHySbrOZJ60Bc-QbUensGttYevtszb5X8VvBs4Y",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-18-gallery-1",
+      "description": "Gallery image 1 for new product 18",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_21!/56.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fMjEhLzU2LnBuZyIsImlhdCI6MTc3MTU5ODI0OSwiZXhwIjoxODAzMTM0MjQ5fQ.ypOEeOeLulZDibdcT-uMStzJAYcqLfZSSwmgV0NDJQM",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-18-gallery-2",
+      "description": "Gallery image 2 for new product 18",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_21!/55.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fMjEhLzU1LnBuZyIsImlhdCI6MTc3MTU5ODI1NSwiZXhwIjoxODAzMTM0MjU1fQ.oe6mCUCBRWyKD5iyZr1-pXqe-pn47N2v_4u7YZ-VEFA",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-18-gallery-3",
+      "description": "Gallery image 3 for new product 18",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_21!/54.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fMjEhLzU0LnBuZyIsImlhdCI6MTc3MTU5ODI2MSwiZXhwIjoxODAzMTM0MjYxfQ.j8L4DAMsbd_LlRHXdhUVa-_ED5pHomW9l03cU1Ec64A",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-19-main",
+      "description": "Main image for new product 19",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Abacaxi/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQWJhY2F4aS9QcmluY2lwYWwucG5nIiwiaWF0IjoxNzcxNTk4MjY5LCJleHAiOjE4MDMxMzQyNjl9.IGu71H7YFZvCodjwtqZ5w0mXUuBeOgauhmTznaEu__Q",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-19-gallery-1",
+      "description": "Gallery image 1 for new product 19",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Abacaxi/40.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQWJhY2F4aS80MC5wbmciLCJpYXQiOjE3NzE1OTgyODIsImV4cCI6MTgwMzEzNDI4Mn0.bgWsAYEqtPRqcVxwUcj4mDqfkO_ER2C94_2oU7QQDu0",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-19-gallery-2",
+      "description": "Gallery image 2 for new product 19",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Abacaxi/39.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQWJhY2F4aS8zOS5wbmciLCJpYXQiOjE3NzE1OTgyODcsImV4cCI6MTgwMzEzNDI4N30.YzuyzaU0wyPy360dRbekqvNwPTlXL97Og1sEb-2PK7w",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-19-gallery-3",
+      "description": "Gallery image 3 for new product 19",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Abacaxi/38.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQWJhY2F4aS8zOC5wbmciLCJpYXQiOjE3NzE1OTgyOTIsImV4cCI6MTgwMzEzNDI5Mn0.m_3x7jS8_Ophm84ea8po5r9h4ZbAzThblWB9AVv72uI",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-20-main",
+      "description": "Main image for new product 20",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Abacaxi_1/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQWJhY2F4aV8xL1ByaW5jaXBhbC5wbmciLCJpYXQiOjE3NzE1OTgzMDEsImV4cCI6MTgwMzEzNDMwMX0.VsUlUKh2DHzdxGoHfauhwHen9zZrcCT5KOicW9UzHBE",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-20-gallery-1",
+      "description": "Gallery image 1 for new product 20",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Abacaxi_1/72.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQWJhY2F4aV8xLzcyLnBuZyIsImlhdCI6MTc3MTU5ODMwNiwiZXhwIjoxODAzMTM0MzA2fQ.peeGPvY0GnNJ8VD1nxeY_N1I-6Gh--bs7PZpQlApM_E",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-20-gallery-2",
+      "description": "Gallery image 2 for new product 20",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Abacaxi_1/71.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQWJhY2F4aV8xLzcxLnBuZyIsImlhdCI6MTc3MTU5ODMxNSwiZXhwIjoxODAzMTM0MzE1fQ.tiZgmwhkr0z2xXNBMXiiiHndHK6aZbjJGCZBIP6G1Mk",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-20-gallery-3",
+      "description": "Gallery image 3 for new product 20",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Abacaxi_1/70.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQWJhY2F4aV8xLzcwLnBuZyIsImlhdCI6MTc3MTU5ODMyMSwiZXhwIjoxODAzMTM0MzIxfQ.TlnS9vYsMsaClviNZJUCLQEiTGCI0jwPofLJS-N5ayE",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-21-main",
+      "description": "Main image for new product 21",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Azul/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQXp1bC9QcmluY2lwYWwucG5nIiwiaWF0IjoxNzcxNTk4MzMzLCJleHAiOjE4MDMxMzQzMzN9.-BdYEn7Ac8BxYNfYOsQweauqMqjAT7Tc6lkiJ2LvxxA",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-21-gallery-1",
+      "description": "Gallery image 1 for new product 21",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Azul/68.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQXp1bC82OC5wbmciLCJpYXQiOjE3NzE1OTgzNDEsImV4cCI6MTgwMzEzNDM0MX0.U4W_US-t-ta4vEole_LzpCOiKRV-hGJqB6dsheh6O6g",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-21-gallery-2",
+      "description": "Gallery image 2 for new product 21",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Azul/67.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQXp1bC82Ny5wbmciLCJpYXQiOjE3NzE1OTgzNTMsImV4cCI6MTgwMzEzNDM1M30.SvopDYJQdPM00m87U78Ie3EVm7OuRd351g3ILAJ3tuY",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-21-gallery-3",
+      "description": "Gallery image 3 for new product 21",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Azul/66.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQXp1bC82Ni5wbmciLCJpYXQiOjE3NzE1OTgzNjEsImV4cCI6MTgwMzEzNDM2MX0.ztvHtLWdLnfX59MaPfBmkP0gr7ucBa1BRJt57yNIyD0",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-22-main",
+      "description": "Main image for new product 22",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlL1ByaW5jaXBhbC5wbmciLCJpYXQiOjE3NzE1OTg0NDEsImV4cCI6MTgwMzEzNDQ0MX0.Log_8UYWLsAuNPAr17FWIIvoRaEhNfoRwc97ZRy8Cl8",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-22-gallery-1",
+      "description": "Gallery image 1 for new product 22",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate/8.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlLzgucG5nIiwiaWF0IjoxNzcxNTk4Mzc5LCJleHAiOjE4MDMxMzQzNzl9.7ZZIiPXZTwifiekhpWHwj8Rx-LAusktvbdzvE_rd5RE",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-22-gallery-2",
+      "description": "Gallery image 2 for new product 22",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate/7.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlLzcucG5nIiwiaWF0IjoxNzcxNTk4MzcxLCJleHAiOjE4MDMxMzQzNzF9.cxliyV7kAM7-8vXjZTDaWOAQTUM-BkDjtv8VX5OT-LY",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-22-gallery-3",
+      "description": "Gallery image 3 for new product 22",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate/9.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlLzkucG5nIiwiaWF0IjoxNzcxNTk4NDUxLCJleHAiOjE4MDMxMzQ0NTF9.BwphBItIaSXlcr4Ka_soXFpuLiqONYszgERwkypGWtE",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-23-main",
+      "description": "Main image for new product 23",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ28vUHJpbmNpcGFsLnBuZyIsImlhdCI6MTc3MTU5ODQ2NywiZXhwIjoxODAzMTM0NDY3fQ._arbxxk7hZ1j2tPq8ofxCnamrDciD5jMrRnBOjmmW0k",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-23-gallery-1",
+      "description": "Gallery image 1 for new product 23",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango/24.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ28vMjQucG5nIiwiaWF0IjoxNzcxNTk4NDc2LCJleHAiOjE4MDMxMzQ0NzZ9.8gXDK2kcnuJFQVnR8y8u1zbAVGYp9ucgsPKScGd2nQo",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-23-gallery-2",
+      "description": "Gallery image 2 for new product 23",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango/23.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ28vMjMucG5nIiwiaWF0IjoxNzcxNTk4NDgyLCJleHAiOjE4MDMxMzQ0ODJ9.whY6Cu2hSmLCqi2mxIDffHxzlehjrVWIgkxgYOlxTkM",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-23-gallery-3",
+      "description": "Gallery image 3 for new product 23",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango/22.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ28vMjIucG5nIiwiaWF0IjoxNzcxNTk4NDg3LCJleHAiOjE4MDMxMzQ0ODd9.KGSrK_YLPUcj0tlBsBGqwnazUYKi6dCrtq0y4nOlm0E",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-24-main",
+      "description": "Main image for new product 24",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango_1/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ29fMS9QcmluY2lwYWwucG5nIiwiaWF0IjoxNzcxNTk4NDk5LCJleHAiOjE4MDMxMzQ0OTl9.88hK0WHca3CjjvUsIJsxZRTdlLb-PDaSp-DgWrPRErs",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-24-gallery-1",
+      "description": "Gallery image 1 for new product 24",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango_1/32.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ29fMS8zMi5wbmciLCJpYXQiOjE3NzE1OTg1MDgsImV4cCI6MTgwMzEzNDUwOH0.kjfbEld8M6RFMdoSM6rldFaW6tjsJXcHkqm_3xvY88s",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-24-gallery-2",
+      "description": "Gallery image 2 for new product 24",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango_1/31.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ29fMS8zMS5wbmciLCJpYXQiOjE3NzE1OTg1MTQsImV4cCI6MTgwMzEzNDUxNH0.4oJHUrecxRZbHxhzE_VwTvOyAAR2hX8DLMHm8HGjF8U",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-24-gallery-3",
+      "description": "Gallery image 3 for new product 24",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango_1/30.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ29fMS8zMC5wbmciLCJpYXQiOjE3NzE1OTg1MTksImV4cCI6MTgwMzEzNDUxOX0.CNcwAQIj9xB680BGJMenCmbGPeO-6NTa6Y23XooxHNs",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-25-main",
+      "description": "Main image for new product 25",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango_Quadrado/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ29fUXVhZHJhZG8vUHJpbmNpcGFsLnBuZyIsImlhdCI6MTc3MTU5ODUzMSwiZXhwIjoxODAzMTM0NTMxfQ.Rgk03I4G38I17OROB9By9VhQiAK5sgt9Pzgm4Uwn39Y",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-25-gallery-1",
+      "description": "Gallery image 1 for new product 25",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango_Quadrado/16.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ29fUXVhZHJhZG8vMTYucG5nIiwiaWF0IjoxNzcxNTk4NTM4LCJleHAiOjE4MDMxMzQ1Mzh9.YYYe6geQo5rzDg3RDrdN5UPA57-2N2V7awXoxD-Zt4o",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-25-gallery-2",
+      "description": "Gallery image 2 for new product 25",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango_Quadrado/15.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ29fUXVhZHJhZG8vMTUucG5nIiwiaWF0IjoxNzcxNTk4NTQ0LCJleHAiOjE4MDMxMzQ1NDR9.T-LPtkVmhL7rjf8RgARwPbjDHxGr-tCPQ1vMtJoMWwI",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-25-gallery-3",
+      "description": "Gallery image 3 for new product 25",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Chocolate_Morango_Quadrado/14.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fQ2hvY29sYXRlX01vcmFuZ29fUXVhZHJhZG8vMTQucG5nIiwiaWF0IjoxNzcxNTk4NTQ5LCJleHAiOjE4MDMxMzQ1NDl9.npneIs85Gr6qJCE86ba1n-bWdAIs7g3sDrIUOdps5wY",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-26-main",
+      "description": "Main image for new product 26",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Elo_Isa/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fRWxvX0lzYS9QcmluY2lwYWwucG5nIiwiaWF0IjoxNzcxNTk4NTU4LCJleHAiOjE4MDMxMzQ1NTh9.4FHP1IjWidKXE1hqp2KFSIF276mRAPVKJc5PV_jz5JM",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-26-gallery-1",
+      "description": "Gallery image 1 for new product 26",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Elo_Isa/12.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fRWxvX0lzYS8xMi5wbmciLCJpYXQiOjE3NzE1OTg1NjcsImV4cCI6MTgwMzEzNDU2N30.yY2Qp5hBkBRzxbe-gjkYbAby1je1EgyP2l1ItSDqdi4",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-26-gallery-2",
+      "description": "Gallery image 2 for new product 26",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Elo_Isa/11.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fRWxvX0lzYS8xMS5wbmciLCJpYXQiOjE3NzE1OTg1NzIsImV4cCI6MTgwMzEzNDU3Mn0.8EzegCZ8iz_6ckrtaja0N-v_8SbFqw4HxuAEOzn1S4Q",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-26-gallery-3",
+      "description": "Gallery image 3 for new product 26",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Elo_Isa/10.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fRWxvX0lzYS8xMC5wbmciLCJpYXQiOjE3NzE1OTg1NzcsImV4cCI6MTgwMzEzNDU3N30.GSgyKFIFZO_5URbNp6JAdcTU9-RKWJTPF385w2liynY",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-27-main",
+      "description": "Main image for new product 27",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Maracuja/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTWFyYWN1amEvUHJpbmNpcGFsLnBuZyIsImlhdCI6MTc3MTU5ODU4NiwiZXhwIjoxODAzMTM0NTg2fQ.4dS11Pxc6Sc_Gfzirt-OOeWDUO4qdN8kRx2mcNdYHjM",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-27-gallery-1",
+      "description": "Gallery image 1 for new product 27",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Maracuja/20.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTWFyYWN1amEvMjAucG5nIiwiaWF0IjoxNzcxNTk4NTk0LCJleHAiOjE4MDMxMzQ1OTR9.3gb1bfMLZ-bW1gZHteDv3PyzsoLWh-G2KxPKjum6IGw",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-27-gallery-2",
+      "description": "Gallery image 2 for new product 27",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Maracuja/19.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTWFyYWN1amEvMTkucG5nIiwiaWF0IjoxNzcxNTk4NTk5LCJleHAiOjE4MDMxMzQ1OTl9.085tvRuqepUCm6RhSgB3ndpcRD4GZEBYMecAOs3tExQ",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-27-gallery-3",
+      "description": "Gallery image 3 for new product 27",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Maracuja/18.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTWFyYWN1amEvMTgucG5nIiwiaWF0IjoxNzcxNTk4NjA0LCJleHAiOjE4MDMxMzQ2MDR9.hvBP24qGE04IXtx2k4qZMIANDUREiojx7qij5Tq79-k",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-28-main",
+      "description": "Main image for new product 28",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Morango_1/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTW9yYW5nb18xL1ByaW5jaXBhbC5wbmciLCJpYXQiOjE3NzE1OTg2MTQsImV4cCI6MTgwMzEzNDYxNH0.2SPPlCd9hIZsz6blVgSI--a6W4IjMICbQQr1gq99Kyw",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-28-gallery-1",
+      "description": "Gallery image 1 for new product 28",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Morango_1/48.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTW9yYW5nb18xLzQ4LnBuZyIsImlhdCI6MTc3MTU5ODYyMywiZXhwIjoxODAzMTM0NjIzfQ.b9DHH1KXRQbYYmjlfFZ6eqpV3TVYa8yoHhGoi58uo2A",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-28-gallery-2",
+      "description": "Gallery image 2 for new product 28",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Morango_1/47.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTW9yYW5nb18xLzQ3LnBuZyIsImlhdCI6MTc3MTU5ODYyOCwiZXhwIjoxODAzMTM0NjI4fQ.quyK6g7Ky6QisK9TF6CweGPQ0yeiM0ZYOxb7pQD-zVk",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-28-gallery-3",
+      "description": "Gallery image 3 for new product 28",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Morango_1/46.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTW9yYW5nb18xLzQ2LnBuZyIsImlhdCI6MTc3MTU5ODYzMywiZXhwIjoxODAzMTM0NjMzfQ.-9i9E5YWwDZABdPPAbr9S4eHAuJ_INaEJz9A4Y2Im3M",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-29-main",
+      "description": "Main image for new product 29",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Morango_Quadrado/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTW9yYW5nb19RdWFkcmFkby9QcmluY2lwYWwucG5nIiwiaWF0IjoxNzcxNTk4NjQyLCJleHAiOjE4MDMxMzQ2NDJ9.BjsY7X1Z4mqMPrdARF-FWm3LSenEp9cJthPIU9GbTio",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-29-gallery-1",
+      "description": "Gallery image 1 for new product 29",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Morango_Quadrado/60.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTW9yYW5nb19RdWFkcmFkby82MC5wbmciLCJpYXQiOjE3NzE1OTg2NTEsImV4cCI6MTgwMzEzNDY1MX0.J3fju3i-j1BYrFNcbsk023_6cwqrGBCnB9NziGUSyFc",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-29-gallery-2",
+      "description": "Gallery image 2 for new product 29",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Morango_Quadrado/59.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTW9yYW5nb19RdWFkcmFkby81OS5wbmciLCJpYXQiOjE3NzE1OTg2NTUsImV4cCI6MTgwMzEzNDY1NX0.9ULfcLGJqbtx8rpvN88TfNyqZdNIKCULtRY0uykrFxE",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-29-gallery-3",
+      "description": "Gallery image 3 for new product 29",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Morango_Quadrado/58.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTW9yYW5nb19RdWFkcmFkby81OC5wbmciLCJpYXQiOjE3NzE1OTg2NjAsImV4cCI6MTgwMzEzNDY2MH0.yRzRWO2PxqKRb_A26T5t9havOqalZn_sUVaaVYwSJds",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-30-main",
+      "description": "Main image for new product 30",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Nathalia/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTmF0aGFsaWEvUHJpbmNpcGFsLnBuZyIsImlhdCI6MTc3MTU5ODY3NiwiZXhwIjoxODAzMTM0Njc2fQ.yM8dtCtkSxwvDcEUbbTF5PuNoPFRFH8Qa2HB7KzPc74",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-30-gallery-1",
+      "description": "Gallery image 1 for new product 30",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Nathalia/44.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTmF0aGFsaWEvNDQucG5nIiwiaWF0IjoxNzcxNTk4NjkyLCJleHAiOjE4MDMxMzQ2OTJ9.UunjByWuCVHwRXBbMFDMhSgjIO3IvulpZQ_RdhhQsyc",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-30-gallery-2",
+      "description": "Gallery image 2 for new product 30",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Nathalia/43.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTmF0aGFsaWEvNDMucG5nIiwiaWF0IjoxNzcxNTk4Njk3LCJleHAiOjE4MDMxMzQ2OTd9.Kirn-FQmtyoTm_3_SXdG6kv2D-E22pCYbFvzbTsc03c",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-30-gallery-3",
+      "description": "Gallery image 3 for new product 30",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Nathalia/42.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fTmF0aGFsaWEvNDIucG5nIiwiaWF0IjoxNzcxNTk4NzAyLCJleHAiOjE4MDMxMzQ3MDJ9.HF8S-m2nyKjxc5eMmfbdvrGR-ZJcFFSO3pCgPMb6mNU",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-31-main",
+      "description": "Main image for new product 31",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Rafa/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fUmFmYS9QcmluY2lwYWwucG5nIiwiaWF0IjoxNzcxNTk4NzE0LCJleHAiOjE4MDMxMzQ3MTR9.frfLYK3bi1HGaAyaE5Hm293HqhMskWUqGRnewuzoFco",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-31-gallery-1",
+      "description": "Gallery image 1 for new product 31",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Rafa/36.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fUmFmYS8zNi5wbmciLCJpYXQiOjE3NzE1OTg3MjMsImV4cCI6MTgwMzEzNDcyM30.Pm_CCKDW5C-Fyk_fQoyOyOCf164nUJBmc27xxZ4_1P0",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-31-gallery-2",
+      "description": "Gallery image 2 for new product 31",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Rafa/35.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fUmFmYS8zNS5wbmciLCJpYXQiOjE3NzE1OTg3MzQsImV4cCI6MTgwMzEzNDczNH0.d-DHvqYK2_-Xiw5RhatiD2K5JlIwGdRfEBryywzRnC0",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-31-gallery-3",
+      "description": "Gallery image 3 for new product 31",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Rafa/34.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fUmFmYS8zNC5wbmciLCJpYXQiOjE3NzE1OTg3NDEsImV4cCI6MTgwMzEzNDc0MX0.2Djy1Y_jIIMbKn5dKnox4F2ijl1RSzY7qQdPhh0oNUY",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-32-main",
+      "description": "Main image for new product 32",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Salatiel/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fU2FsYXRpZWwvUHJpbmNpcGFsLnBuZyIsImlhdCI6MTc3MTU5ODc0OSwiZXhwIjoxODAzMTM0NzQ5fQ.-Hpo1ZoaBkdsuaA0eHWk3Q_donRhS8u61l82_EIhIVw",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-32-gallery-1",
+      "description": "Gallery image 1 for new product 32",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Salatiel/64.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fU2FsYXRpZWwvNjQucG5nIiwiaWF0IjoxNzcxNTk4NzU3LCJleHAiOjE4MDMxMzQ3NTd9.8Q48VGiiir7Gt1MzpO5-H5bHTvkY9l9w92e7CetY_vA",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-32-gallery-2",
+      "description": "Gallery image 2 for new product 32",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Salatiel/63.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fU2FsYXRpZWwvNjMucG5nIiwiaWF0IjoxNzcxNTk4NzYyLCJleHAiOjE4MDMxMzQ3NjJ9.QaUBlzRZMfyytM4y3h81krg0IfdgrtgCfENWCkbU4ug",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-32-gallery-3",
+      "description": "Gallery image 3 for new product 32",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Salatiel/62.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fU2FsYXRpZWwvNjIucG5nIiwiaWF0IjoxNzcxNTk4NzY3LCJleHAiOjE4MDMxMzQ3Njd9.PC64TaybFez0FNh9lioWSU7fj7qtUDyb5yliA1HNit4",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-33-main",
+      "description": "Main image for new product 33",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Sonho_Valsa/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fU29uaG9fVmFsc2EvUHJpbmNpcGFsLnBuZyIsImlhdCI6MTc3MTU5ODc3NiwiZXhwIjoxODAzMTM0Nzc2fQ.cXqoAxPAp32FerxJHdG1kJpuaj3WhDWyVQRzyWHklZU",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-33-gallery-1",
+      "description": "Gallery image 1 for new product 33",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Sonho_Valsa/6.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fU29uaG9fVmFsc2EvNi5wbmciLCJpYXQiOjE3NzE1OTg3ODYsImV4cCI6MTgwMzEzNDc4Nn0.rPFOmEP3mSTX61Qo3d6th3llzDeoL_9c84HcWFX6JnM",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-33-gallery-2",
+      "description": "Gallery image 2 for new product 33",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Sonho_Valsa/5.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fU29uaG9fVmFsc2EvNS5wbmciLCJpYXQiOjE3NzE1OTg3OTAsImV4cCI6MTgwMzEzNDc5MH0.otUJj7kimPnfFxpkK1B2VdAzJrzYEf8gUsBLC6uMqM8",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-33-gallery-3",
+      "description": "Gallery image 3 for new product 33",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Sonho_Valsa/4.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fU29uaG9fVmFsc2EvNC5wbmciLCJpYXQiOjE3NzE1OTg3OTQsImV4cCI6MTgwMzEzNDc5NH0.BVJ-omfQh3Vf2ZzQhe8PxMdVDT9osON8wcucmerrv4g",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-34-main",
+      "description": "Main image for new product 34",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Thomas_2/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fVGhvbWFzXzIvUHJpbmNpcGFsLnBuZyIsImlhdCI6MTc3MTU5ODgwMSwiZXhwIjoxODAzMTM0ODAxfQ.c9FbLGhHXGZHnC_P5BFu1DJfC0jKTIkP4DOLJSammno",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-34-gallery-1",
+      "description": "Gallery image 1 for new product 34",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Thomas_2/52.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fVGhvbWFzXzIvNTIucG5nIiwiaWF0IjoxNzcxNTk4ODExLCJleHAiOjE4MDMxMzQ4MTF9.ZIU1aLZlFsULxfe6lgYDcUZ_a98ol4FUd05HqnjMirE",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-34-gallery-2",
+      "description": "Gallery image 2 for new product 34",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Thomas_2/51.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fVGhvbWFzXzIvNTEucG5nIiwiaWF0IjoxNzcxNTk4ODE2LCJleHAiOjE4MDMxMzQ4MTZ9.ICkxPHCaX93I3coLFYfPZrvn9Wsv75hxsVrKExeNO_0",
+      "imageHint": "cake dessert"
+    },
+    {
+      "id": "product-34-gallery-3",
+      "description": "Gallery image 3 for new product 34",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Vitrine/Bolo_Thomas_2/50.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9WaXRyaW5lL0JvbG9fVGhvbWFzXzIvNTAucG5nIiwiaWF0IjoxNzcxNTk4ODIyLCJleHAiOjE4MDMxMzQ4MjJ9.lqPMrAdLhm1w1qjEkG1BwUzeHNhvnK-9tCMdS7fS-8I",
+      "imageHint": "cake dessert"
     }
   ]
 }
