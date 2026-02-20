@@ -2,26 +2,26 @@
   "placeholderImages": [
     {
       "id": "logo-main",
-      "description": "SweetArt Atelier main logo",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1uuC11i_ocwuZj5zqyqJjz-UjQmyIBS-l",
+      "description": "SweetArt Atelier main logo (white)",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Hero_Section/Logo_White.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9IZXJvX1NlY3Rpb24vTG9nb19XaGl0ZS5wbmciLCJpYXQiOjE3NzE1OTM1NDgsImV4cCI6MTgwMzEyOTU0OH0.TypZRBWzQxTl34byi-VSFNuvb5HNnTyoJnWRnfQni1g",
       "imageHint": "logo text"
     },
     {
       "id": "logo-small",
-      "description": "SweetArt Atelier small logo",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1zu7AyMr1M6ouW3j4GmTjaJD8odFc47Mc",
+      "description": "SweetArt Atelier small logo (black)",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Hero_Section/Logo_Black.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9IZXJvX1NlY3Rpb24vTG9nb19CbGFjay5wbmciLCJpYXQiOjE3NzE1OTM1MzgsImV4cCI6MTgwMzEyOTUzOH0.FpwjmBVR4LhChcNf1j91yuKy044mB1DT456ZQU1ONbY",
       "imageHint": "logo monogram"
     },
     {
       "id": "hero-bg",
       "description": "Hero background image of a cake",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1xYBKePwEBX4NzmYAUyw8jXP0tvZeyoaI",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Hero_Section/Background_desktop.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9IZXJvX1NlY3Rpb24vQmFja2dyb3VuZF9kZXNrdG9wLmpwZWciLCJpYXQiOjE3NzE1OTM1MTUsImV4cCI6MTgwMzEyOTUxNX0.TlTB2KoZv02nmN3C97841pktfRGZeXMdZyMY5aFE_lY",
       "imageHint": "cake detail"
     },
     {
       "id": "hero-bg-mobile",
       "description": "Hero background image of a cake for mobile",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1enYLkMQkiO1vrAe4HPuG9VVOpNcYgcKk",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Hero_Section/Background_mobile.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9IZXJvX1NlY3Rpb24vQmFja2dyb3VuZF9tb2JpbGUucG5nIiwiaWF0IjoxNzcxNTkzNTAwLCJleHAiOjE4MDMxMjk1MDB9.9gTSa4VRC5iHUFesaLIPR4zY2jXTPA4mwXlSeNdUAWQ",
       "imageHint": "cake vertical"
     },
     {
@@ -177,67 +177,67 @@
     {
       "id": "testimonial-1",
       "description": "Testimonial screenshot 1",
-      "imageUrl": "https://lh3.googleusercontent.com/d/12wOBT7rUzv1BFNBbCttt59tskqzFoUHj",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Depoimentos/Depoimento_01.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9EZXBvaW1lbnRvcy9EZXBvaW1lbnRvXzAxLnBuZyIsImlhdCI6MTc3MTU5MzQwMSwiZXhwIjoxODAzMTI5NDAxfQ.30TWvvtQPHioQTvSqkOYPD-7ET2ckjw-PyJSfmVLPd8",
       "imageHint": "chat message"
     },
     {
       "id": "testimonial-2",
       "description": "Testimonial screenshot 2",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1HEHv4Cw-l1QOhou1Ie3aHV4lUY1-g6cD",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Depoimentos/Depoimento_02.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9EZXBvaW1lbnRvcy9EZXBvaW1lbnRvXzAyLmpwZWciLCJpYXQiOjE3NzE1OTM0MjAsImV4cCI6MTgwMzEyOTQyMH0.ouG3_6SzHPZbG0yZqYHT9xbXQkJLcIuSkknPm9IQkLI",
       "imageHint": "chat message"
     },
     {
       "id": "testimonial-3",
       "description": "Testimonial screenshot 3",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1z3CKVmrkTUNnFIGagRn15NiBvOLb3UoL",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Depoimentos/Depoimento_03.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9EZXBvaW1lbnRvcy9EZXBvaW1lbnRvXzAzLmpwZWciLCJpYXQiOjE3NzE1OTM0MjksImV4cCI6MTgwMzEyOTQyOX0.Az5Ro8JGH-_fC98JDKbHaY2tTMRXmIhMjqWT8bdZLB8",
       "imageHint": "chat message"
     },
     {
       "id": "testimonial-4",
       "description": "Testimonial screenshot 4",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1dOSX4XdTPEZJ3An_mu4ForVdMPsiVDwr",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Depoimentos/Depoimento_05.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9EZXBvaW1lbnRvcy9EZXBvaW1lbnRvXzA1LmpwZWciLCJpYXQiOjE3NzE1OTM0NDAsImV4cCI6MTgwMzEyOTQ0MH0.X2DFy6cisgdZhU9tPfEPdOAw53fBSwNBQqbDDqt7ppw",
       "imageHint": "chat message"
     },
     {
       "id": "testimonial-5",
       "description": "Testimonial screenshot 5",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1NwNxNA1mPZ95UOfD1gFgzx_cMYt36vN-",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Depoimentos/Depoimento_06.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9EZXBvaW1lbnRvcy9EZXBvaW1lbnRvXzA2LmpwZWciLCJpYXQiOjE3NzE1OTM0NDYsImV4cCI6MTgwMzEyOTQ0Nn0.cTe2pF7xHmdkyEC1j4XDi65FzE3Qxbynq3jzuSEMWho",
       "imageHint": "chat message"
     },
     {
       "id": "testimonial-6",
       "description": "Testimonial screenshot 6",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1Dlf5co4NxYLJw5be7XsKQih2SF-GKwlH",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Depoimentos/Depoimento_07.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9EZXBvaW1lbnRvcy9EZXBvaW1lbnRvXzA3LmpwZWciLCJpYXQiOjE3NzE1OTM0NTEsImV4cCI6MTgwMzEyOTQ1MX0.hND6R0q9PucC4Qki7x2_1rkQ9X0iMSO-82qrq4kIu_Y",
       "imageHint": "chat message"
     },
     {
       "id": "testimonial-7",
       "description": "Testimonial screenshot 7",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1Dlf5co4NxYLJw5be7XsKQih2SF-GKwlH",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Depoimentos/Depoimento_08.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9EZXBvaW1lbnRvcy9EZXBvaW1lbnRvXzA4LmpwZWciLCJpYXQiOjE3NzE1OTM0NTcsImV4cCI6MTgwMzEyOTQ1N30.5FvhsPf68y-izQnm3_aAkJOCLzM3iQusK2EG4KcsFyU",
       "imageHint": "chat message"
     },
     {
       "id": "pudim-main",
       "description": "Main image for Pudim de Leite",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1qrpW-Lj0vOuEhqSytbFFExtwYDU8puU8",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Mais_Produtos/Pudim/Principal.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9NYWlzX1Byb2R1dG9zL1B1ZGltL1ByaW5jaXBhbC5wbmciLCJpYXQiOjE3NzE1OTM1OTYsImV4cCI6MTgwMzEyOTU5Nn0.ro-hk8YxHht6z7HbFPzknfBwgEVqGuWaT7x__zU0c3o",
       "imageHint": "pudding dessert"
     },
     {
       "id": "pudim-gallery-1",
       "description": "Gallery image for Pudim de Leite",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1JniO3B7fEVaR0QADGJu7ctYuAcK_5Dy5",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Mais_Produtos/Pudim/26.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9NYWlzX1Byb2R1dG9zL1B1ZGltLzI2LnBuZyIsImlhdCI6MTc3MTU5MzYwNSwiZXhwIjoxODAzMTI5NjA1fQ.cpgC3fm5H9seQjWqyigNd6Md9YFFJExQgkRPwoqx2Yc",
       "imageHint": "pudding slice"
     },
     {
       "id": "pudim-gallery-2",
       "description": "Gallery image for Pudim de Leite",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1AYyV8AzhOGp6xg0PC-kCwIGMl_rCv4Y3",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Mais_Produtos/Pudim/27.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9NYWlzX1Byb2R1dG9zL1B1ZGltLzI3LnBuZyIsImlhdCI6MTc3MTU5MzYxMiwiZXhwIjoxODAzMTI5NjEyfQ.36w7LAkclF0tEwOXX9yvYqTloQvJ6wgrrRUctrnkIpQ",
       "imageHint": "pudding closeup"
     },
     {
       "id": "pudim-gallery-3",
       "description": "Gallery image for Pudim de Leite",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1-fbNCiel90K6jWcfgZSpKO62F17raoN9",
+      "imageUrl": "https://ojkhtaoxalsknciripdh.supabase.co/storage/v1/object/sign/Ayme%20Varela/Mais_Produtos/Pudim/28.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xODFmNDcyOC04ZDVlLTRhMGYtOTRhZC1hZDUzMDUyYzFjZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBeW1lIFZhcmVsYS9NYWlzX1Byb2R1dG9zL1B1ZGltLzI4LnBuZyIsImlhdCI6MTc3MTU5MzYxNiwiZXhwIjoxODAzMTI5NjE2fQ.4HI3nOiT9pCEXfqdTJLtmj6Mcr3Km--1_j0AIBXeE1k",
       "imageHint": "pudding detail"
     },
     {

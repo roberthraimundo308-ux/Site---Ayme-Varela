@@ -21,7 +21,7 @@ export const Footer = () => {
               alt="Logo" 
               width={512} 
               height={512} 
-              className="h-32 w-auto brightness-0 invert" 
+              className="h-32 w-auto" 
               quality={100}
               sizes="(max-width: 768px) 100vw, 33vw"
             />

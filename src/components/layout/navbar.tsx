@@ -34,7 +34,7 @@ export const Navbar = () => {
           alt="Ayme Varela"
           width={512}
           height={512}
-          className="h-40 md:h-52 w-auto object-contain brightness-0 invert drop-shadow-md"
+          className="h-40 md:h-52 w-auto object-contain drop-shadow-md"
           priority
           quality={100}
           sizes="512px"
