@@ -11,7 +11,7 @@ import { SectionTitle } from '../ui/section-title';
 import { StandardButton } from '../ui/standard-button';
 import { CustomCalendar } from '../custom-calendar';
 import { Input } from '../ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Checkbox } from '../ui/checkbox';
 
 const fillings = [
   'Ninho com Morango',
@@ -34,7 +34,7 @@ export const OrderFormSection = () => {
     nome: '',
     tamanho: '20 pedaços',
     massa: 'Branca',
-    recheio: fillings[0],
+    recheios: [] as string[],
     topper: false,
     glitter: false,
     data: new Date(),
@@ -51,6 +51,23 @@ export const OrderFormSection = () => {
     }
   };
   
+  const handleFillingChange = (filling: string) => {
+    const currentFillings = formData.recheios;
+    const isSelected = currentFillings.includes(filling);
+    
+    if (isSelected) {
+      setFormData({
+        ...formData,
+        recheios: currentFillings.filter((f) => f !== filling),
+      });
+    } else if (currentFillings.length < 2) {
+      setFormData({
+        ...formData,
+        recheios: [...currentFillings, filling],
+      });
+    }
+  };
+
   const removeImage = () => {
     setFormData({ ...formData, referenceImage: null });
     if(imagePreview) {
@@ -65,7 +82,7 @@ export const OrderFormSection = () => {
       `👤 *Cliente:* ${formData.nome || 'Não informado'}%0A` +
       `📏 *Tamanho:* ${formData.tamanho}%0A` +
       `🍰 *Massa:* ${formData.massa}%0A` +
-      `✨ *Recheio:* ${formData.recheio}%0A` +
+      `✨ *Recheios:* ${formData.recheios.join(', ') || 'Nenhum'}%0A` +
       `🎨 *Adicionais:* ${[formData.topper ? 'Topper' : '', formData.glitter ? 'Glitter' : ''].filter(Boolean).join(', ') || 'Nenhum'}%0A`;
 
     if (formData.referenceImage) {
@@ -118,17 +135,26 @@ export const OrderFormSection = () => {
                 </div>
                 <div className="space-y-8">
                   <div className="space-y-4">
-                    <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] font-sans">Recheio Irresistível</h4>
-                    <Select value={formData.recheio} onValueChange={(value) => setFormData({ ...formData, recheio: value })}>
-                      <SelectTrigger className={cn(commonInputClass, "h-auto justify-between")}>
-                        <SelectValue placeholder="Escolha um recheio" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {fillings.map(filling => (
-                          <SelectItem key={filling} value={filling}>{filling}</SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] font-sans">Recheios Irresistíveis (Escolha até 2)</h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
+                      {fillings.map(filling => (
+                        <div key={filling} className="flex items-center space-x-3">
+                          <Checkbox
+                            id={`filling-${filling}`}
+                            checked={formData.recheios.includes(filling)}
+                            onCheckedChange={() => handleFillingChange(filling)}
+                            disabled={formData.recheios.length >= 2 && !formData.recheios.includes(filling)}
+                            className="w-4 h-4 rounded-full"
+                          />
+                          <label
+                            htmlFor={`filling-${filling}`}
+                            className="text-sm font-sans font-medium text-stone-600 cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 leading-none"
+                          >
+                            {filling}
+                          </label>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                   <div className="space-y-4">
                     <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] font-sans">Adicionais Especiais</h4>
