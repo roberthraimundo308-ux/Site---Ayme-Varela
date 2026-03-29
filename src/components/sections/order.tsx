@@ -1,17 +1,113 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Cake, Check, Clock, MessageCircle, User, Upload } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Cake, Check, Clock, MessageCircle } from 'lucide-react';
 import { Calendar as CalendarIcon } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
-import { ORDER_BG, WHATSAPP_NUMBER } from '@/lib/constants';
+import { ORDER_BG } from '@/lib/constants';
 import { SectionTitle } from '../ui/section-title';
 import { StandardButton } from '../ui/standard-button';
 import { CustomCalendar } from '../custom-calendar';
-import { Input } from '../ui/input';
 import { Checkbox } from '../ui/checkbox';
+
+const WHATSAPP = '5547992861817';
+
+/* ── Scroll Wheel Picker (estilo MIUI/Xiaomi) ── */
+const ITEM_HEIGHT = 44;
+const VISIBLE_ITEMS = 5;
+const PADDING_ITEMS = Math.floor(VISIBLE_ITEMS / 2);
+
+function ScrollWheelPicker({ items, value, onChange }: { items: string[]; value: string; onChange: (v: string) => void }) {
+  const listRef = useRef<HTMLDivElement>(null);
+  const settleTimer = useRef<ReturnType<typeof setTimeout>>();
+  const programmaticScroll = useRef(false);
+  const valueRef = useRef(value);
+  valueRef.current = value;
+
+  const scrollToIndex = useCallback((index: number, smooth: boolean) => {
+    const el = listRef.current;
+    if (!el) return;
+    programmaticScroll.current = true;
+    el.scrollTo({ top: index * ITEM_HEIGHT, behavior: smooth ? 'smooth' : 'auto' });
+    // Reset flag after animation
+    setTimeout(() => { programmaticScroll.current = false; }, smooth ? 300 : 50);
+  }, []);
+
+  // Initial position + sync when value changes externally
+  useEffect(() => {
+    const idx = items.indexOf(value);
+    if (idx >= 0) scrollToIndex(idx, false);
+  }, [value, items, scrollToIndex]);
+
+  const handleScroll = useCallback(() => {
+    if (programmaticScroll.current) return;
+
+    if (settleTimer.current) clearTimeout(settleTimer.current);
+    settleTimer.current = setTimeout(() => {
+      const el = listRef.current;
+      if (!el) return;
+
+      const rawIndex = el.scrollTop / ITEM_HEIGHT;
+      const snappedIndex = Math.max(0, Math.min(items.length - 1, Math.round(rawIndex)));
+
+      // Snap to nearest item
+      programmaticScroll.current = true;
+      el.scrollTo({ top: snappedIndex * ITEM_HEIGHT, behavior: 'smooth' });
+      setTimeout(() => { programmaticScroll.current = false; }, 300);
+
+      const newValue = items[snappedIndex];
+      if (newValue !== valueRef.current) {
+        onChange(newValue);
+      }
+    }, 120);
+  }, [items, onChange]);
+
+  const handleClick = useCallback((index: number) => {
+    onChange(items[index]);
+    scrollToIndex(index, true);
+  }, [items, onChange, scrollToIndex]);
+
+  const selectedIndex = items.indexOf(value);
+
+  return (
+    <div className="relative overflow-hidden rounded-xl" style={{ height: ITEM_HEIGHT * VISIBLE_ITEMS, width: 72 }}>
+      {/* Selection highlight */}
+      <div
+        className="absolute left-0 right-0 pointer-events-none border-y border-primary/20 bg-primary/5 z-10"
+        style={{ top: ITEM_HEIGHT * PADDING_ITEMS, height: ITEM_HEIGHT }}
+      />
+      {/* Fade edges */}
+      <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-white to-transparent z-20 pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white to-transparent z-20 pointer-events-none" />
+      <div
+        ref={listRef}
+        onScroll={handleScroll}
+        className="h-full overflow-y-auto overscroll-contain"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}
+      >
+        {/* Top spacer */}
+        <div style={{ height: ITEM_HEIGHT * PADDING_ITEMS }} />
+        {items.map((item, i) => (
+          <div
+            key={item}
+            onClick={() => handleClick(i)}
+            className={cn(
+              "flex items-center justify-center cursor-pointer select-none transition-all duration-150",
+              i === selectedIndex ? "text-primary font-bold text-xl" : "text-stone-300 text-lg"
+            )}
+            style={{ height: ITEM_HEIGHT }}
+          >
+            {item}
+          </div>
+        ))}
+        {/* Bottom spacer */}
+        <div style={{ height: ITEM_HEIGHT * PADDING_ITEMS }} />
+      </div>
+    </div>
+  );
+}
 
 const fillings = [
   'Ninho com Morango',
@@ -28,187 +124,181 @@ const fillings = [
   'Pudim com Mousse de Doce de Leite'
 ];
 
-export const OrderFormSection = () => {
+const hours = Array.from({ length: 13 }, (_, i) => String(i + 9).padStart(2, '0'));
+const minutes = ['00', '15', '30', '45'];
+
+const stepSubtitles: Record<number, string> = {
+  1: 'personalize o seu momento',
+  2: 'escolha os sabores',
+  3: 'escolha a data da celebração',
+  4: 'finalize seu pedido',
+};
+
+export const OrderFormSection = ({ className }: { className?: string }) => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
-    nome: '',
-    tamanho: '20 pedaços',
-    massa: 'Branca',
+    tamanho: '',
+    massa: '',
     recheios: [] as string[],
     topper: false,
     glitter: false,
     data: new Date(),
-    horario: 'Tarde (13h - 18h)',
-    referenceImage: null as File | null,
+    hora: '14',
+    minuto: '00',
   });
-  const [imagePreview, setImagePreview] = useState<string | null>(null);
 
-  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-        setFormData({ ...formData, referenceImage: file });
-        setImagePreview(URL.createObjectURL(file));
-    }
-  };
-  
   const handleFillingChange = (filling: string) => {
-    const currentFillings = formData.recheios;
-    const isSelected = currentFillings.includes(filling);
-    
-    if (isSelected) {
-      setFormData({
-        ...formData,
-        recheios: currentFillings.filter((f) => f !== filling),
-      });
-    } else if (currentFillings.length < 2) {
-      setFormData({
-        ...formData,
-        recheios: [...currentFillings, filling],
-      });
+    const current = formData.recheios;
+    if (current.includes(filling)) {
+      setFormData({ ...formData, recheios: current.filter((f) => f !== filling) });
+    } else if (current.length < 2) {
+      setFormData({ ...formData, recheios: [...current, filling] });
     }
   };
-
-  const removeImage = () => {
-    setFormData({ ...formData, referenceImage: null });
-    if(imagePreview) {
-      URL.revokeObjectURL(imagePreview);
-    }
-    setImagePreview(null);
-  }
 
   const handleFinalize = () => {
     const dataFormatada = formData.data.toLocaleDateString('pt-BR');
-    let message = `🧁 *Novo Pedido Personalizado* %0A%0A` +
-      `👤 *Cliente:* ${formData.nome || 'Não informado'}%0A` +
-      `📏 *Tamanho:* ${formData.tamanho}%0A` +
-      `🍰 *Massa:* ${formData.massa}%0A` +
+    const message = `🧁 *Novo Pedido Personalizado* %0A%0A` +
+      `📏 *Tamanho:* ${formData.tamanho || 'Não informado'}%0A` +
+      `🍰 *Massa:* ${formData.massa || 'Não informada'}%0A` +
       `✨ *Recheios:* ${formData.recheios.join(', ') || 'Nenhum'}%0A` +
-      `🎨 *Adicionais:* ${[formData.topper ? 'Topper' : '', formData.glitter ? 'Glitter' : ''].filter(Boolean).join(', ') || 'Nenhum'}%0A`;
-
-    if (formData.referenceImage) {
-      message += `🖼️ *Imagem de referência:* Sim (anexada no formulário)%0A`;
-    }
-
-    message += `%0A📅 *Agendamento:* ${dataFormatada} (${formData.horario})`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+      `🎨 *Adicionais:* ${[formData.topper ? 'Topper' : '', formData.glitter ? 'Glitter' : ''].filter(Boolean).join(', ') || 'Nenhum'}%0A` +
+      `%0A📅 *Agendamento:* ${dataFormatada} às ${formData.hora}:${formData.minuto}`;
+    window.open(`https://wa.me/${WHATSAPP}?text=${message}`, '_blank');
   };
 
-  const commonInputClass = "w-full py-3 px-6 rounded-full border border-stone-200 bg-white/50 focus:border-primary focus:ring-primary outline-none text-[10px] font-bold uppercase tracking-widest font-sans transition-all placeholder:font-medium placeholder:tracking-[0.5em]";
+  const goNext = () => setStep((s) => Math.min(s + 1, 4));
+  const goBack = () => setStep((s) => Math.max(s - 1, 1));
+  const isNextDisabled = step === 2 && formData.recheios.length < 2;
 
   return (
-    <section id="pedido" className="relative py-24 overflow-hidden bg-white border-y border-stone-100">
+    <section id="pedido" className={`relative min-h-screen md:min-h-0 py-10 md:py-24 overflow-hidden bg-white border-y border-stone-100 flex flex-col justify-center ${className ?? ''}`}>
       <Image
         src={ORDER_BG}
         alt="Cake decoration background"
         fill
-        className="object-cover z-0 opacity-45"
+        className="object-cover object-right z-0 opacity-45"
         quality={70}
         data-ai-hint="cake decoration"
       />
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-background to-transparent z-[1]"></div>
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent z-[1]"></div>
+      <div className="absolute top-0 left-0 w-full h-16 md:h-32 bg-gradient-to-b from-background to-transparent z-[1]"></div>
+      <div className="absolute bottom-0 left-0 w-full h-16 md:h-32 bg-gradient-to-t from-background to-transparent z-[1]"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <SectionTitle title="Faça seu pedido" subtitle={step === 1 ? "personalize o seu momento" : "Escolha a data da celebração"} />
-        <motion.div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-xl p-8 md:p-12 shadow-2xl border border-stone-100/50">
+        <SectionTitle title="Faça seu pedido" subtitle={stepSubtitles[step]} />
+        <motion.div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-xl p-4 md:p-12 shadow-2xl border border-stone-100/50 h-[480px] md:h-auto md:min-h-[420px] flex flex-col">
           <AnimatePresence mode="wait">
-            {step === 1 ? (
-              <motion.div key="step1" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div className="space-y-8">
-                  <div className="space-y-4">
-                    <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><CalendarIcon size={14} /> Escolha o tamanho</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {['20 pedaços', '30 pedaços', '40 pedaços', '50 pedaços'].map(size => (
-                        <StandardButton key={size} onClick={() => setFormData({...formData, tamanho: size})} active={formData.tamanho === size} isNarrow>{size}</StandardButton>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><Cake size={14} /> Escolha a massa</h4>
-                    <div className="flex gap-2">
-                      {['Branca', 'Preta'].map(massa => (
-                        <StandardButton key={massa} onClick={() => setFormData({...formData, massa: massa})} active={formData.massa === massa} className="flex-1" isNarrow>
-                          <div className={cn("w-2 h-2 rounded-full border border-stone-100", massa === 'Branca' ? "bg-amber-50" : "bg-stone-800")} /> {massa}
-                        </StandardButton>
-                      ))}
-                    </div>
+            {/* flex-grow to push navigation to bottom */}
+            {/* STEP 1 — Tamanho, Massa, Adicionais */}
+            {step === 1 && (
+              <motion.div key="step1" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className="space-y-5">
+                <div className="space-y-3">
+                  <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><CalendarIcon size={14} /> Escolha o tamanho</h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    {['20 pedaços', '30 pedaços', '40 pedaços', '50 pedaços'].map(size => (
+                      <StandardButton key={size} onClick={() => setFormData({ ...formData, tamanho: size })} active={formData.tamanho === size} className="w-full" isNarrow>{size}</StandardButton>
+                    ))}
                   </div>
                 </div>
-                <div className="space-y-8">
-                  <div className="space-y-4">
-                    <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] font-sans">Recheios Irresistíveis (Escolha até 2)</h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
-                      {fillings.map(filling => (
-                        <div key={filling} className="flex items-center space-x-3">
-                          <Checkbox
-                            id={`filling-${filling}`}
-                            checked={formData.recheios.includes(filling)}
-                            onCheckedChange={() => handleFillingChange(filling)}
-                            disabled={formData.recheios.length >= 2 && !formData.recheios.includes(filling)}
-                            className="w-4 h-4 rounded-full"
-                          />
-                          <label
-                            htmlFor={`filling-${filling}`}
-                            className="text-sm font-sans font-medium text-stone-600 cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 leading-none"
-                          >
-                            {filling}
-                          </label>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] font-sans">Adicionais Especiais</h4>
-                    <div className="flex gap-2">
-                      <StandardButton onClick={() => setFormData({...formData, topper: !formData.topper})} active={formData.topper} className="flex-1" icon={formData.topper ? Check : undefined} isNarrow>Topper</StandardButton>
-                      <StandardButton onClick={() => setFormData({...formData, glitter: !formData.glitter})} active={formData.glitter} className="flex-1" icon={formData.glitter ? Check : undefined} isNarrow>Glitter</StandardButton>
-                    </div>
+                <div className="space-y-3">
+                  <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><Cake size={14} /> Escolha a massa</h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    {['Branca', 'Preta'].map(massa => (
+                      <StandardButton key={massa} onClick={() => setFormData({ ...formData, massa })} active={formData.massa === massa} className="w-full" isNarrow>
+                        <div className={cn("w-2 h-2 rounded-full border border-stone-100", massa === 'Branca' ? "bg-amber-50" : "bg-stone-800")} /> {massa}
+                      </StandardButton>
+                    ))}
                   </div>
                 </div>
-              </motion.div>
-            ) : (
-              <motion.div key="step2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div className="space-y-4">
-                  <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><CalendarIcon size={14} /> Dia da Celebração</h4>
-                  <CustomCalendar selectedDate={formData.data} onSelect={(d) => setFormData({...formData, data: d})} />
-                </div>
-                <div className="flex flex-col gap-6">
-                  <div className="space-y-4">
-                    <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><Clock size={14} /> Preferência de Horário</h4>
-                    <div className="flex flex-col gap-2">
-                      {['Manhã (09h - 12h)', 'Tarde (13h - 18h)', 'Noite (19h - 21h)'].map(time => (
-                        <button key={time} onClick={() => setFormData({...formData, horario: time})} className={cn("w-full py-3 px-5 rounded-full text-left transition-all border flex items-center justify-between font-sans font-bold uppercase tracking-[0.2em] text-[10px]", formData.horario === time ? "bg-primary text-white border-primary shadow-lg" : "bg-white text-stone-500 border-stone-200 hover:border-primary")}>
-                          <span>{time}</span>
-                          {formData.horario === time && <Check size={14} />}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="space-y-4 pt-4 border-t border-stone-100">
-                    <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><User size={14} /> Seu Nome</h4>
-                    <Input type="text" className={commonInputClass} value={formData.nome} onChange={(e) => setFormData({...formData, nome: e.target.value})} />
-                  </div>
-                  <div className="space-y-2">
-                      <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><Upload size={14} /> Imagem de Referência</h4>
-                      <label htmlFor="reference-upload" className="relative w-full h-32 border-2 border-dashed border-stone-200 rounded-xl flex items-center justify-center text-center p-2 cursor-pointer hover:border-primary transition-colors">
-                          <input type="file" id="reference-upload" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" onChange={handleImageChange} accept="image/*" />
-                          {imagePreview ? (
-                              <Image src={imagePreview} alt="Pré-visualização da imagem de referência" fill className="object-contain rounded-lg p-1" />
-                          ) : (
-                              <span className="text-stone-500 text-xs font-sans font-medium">Clique para adicionar uma imagem</span>
-                          )}
-                      </label>
-                      {imagePreview && (
-                          <StandardButton onClick={removeImage} isNarrow className="w-full text-xs !bg-destructive/10 !text-destructive hover:!bg-destructive hover:!text-white border-destructive/20">Remover Imagem</StandardButton>
-                      )}
+                <div className="space-y-3">
+                  <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] font-sans">Adicionais Especiais</h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    <StandardButton onClick={() => setFormData({ ...formData, topper: !formData.topper })} active={formData.topper} className="w-full" icon={formData.topper ? Check : undefined} isNarrow>Topper</StandardButton>
+                    <StandardButton onClick={() => setFormData({ ...formData, glitter: !formData.glitter })} active={formData.glitter} className="w-full" icon={formData.glitter ? Check : undefined} isNarrow>Glitter</StandardButton>
                   </div>
                 </div>
               </motion.div>
             )}
+
+            {/* STEP 2 — Recheios */}
+            {step === 2 && (
+              <motion.div key="step2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-4">
+                <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] font-sans">Recheios Irresistíveis</h4>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-3">
+                  {fillings.map(filling => (
+                    <div key={filling} className="flex items-center space-x-3">
+                      <Checkbox
+                        id={`filling-${filling}`}
+                        checked={formData.recheios.includes(filling)}
+                        onCheckedChange={() => handleFillingChange(filling)}
+                        disabled={formData.recheios.length >= 2 && !formData.recheios.includes(filling)}
+                        className="w-4 h-4 rounded-full"
+                      />
+                      <label
+                        htmlFor={`filling-${filling}`}
+                        className="text-sm font-sans font-medium text-stone-600 cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 leading-none"
+                      >
+                        {filling}
+                      </label>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
+            {/* STEP 3 — Calendário */}
+            {step === 3 && (
+              <motion.div key="step3" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-3">
+                <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 font-sans"><CalendarIcon size={14} /> Dia da Celebração</h4>
+                <div className="flex justify-center">
+                  <CustomCalendar selectedDate={formData.data} onSelect={(d) => setFormData({ ...formData, data: d })} />
+                </div>
+              </motion.div>
+            )}
+
+            {/* STEP 4 — Horário + Mensagem */}
+            {step === 4 && (
+              <motion.div key="step4" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex flex-col items-center justify-center flex-1 gap-6">
+                <div className="space-y-3 w-full">
+                  <h4 className="text-primary font-bold text-[10px] uppercase tracking-[0.3em] flex items-center justify-center gap-2 font-sans"><Clock size={14} /> Horário de Retirada</h4>
+                  <div className="flex items-center justify-center gap-2">
+                    <ScrollWheelPicker
+                      items={hours}
+                      value={formData.hora}
+                      onChange={(v) => setFormData({ ...formData, hora: v })}
+                    />
+                    <span className="text-2xl font-bold text-primary">:</span>
+                    <ScrollWheelPicker
+                      items={minutes}
+                      value={formData.minuto}
+                      onChange={(v) => setFormData({ ...formData, minuto: v })}
+                    />
+                  </div>
+                </div>
+                <p className="text-primary text-sm font-sans text-center leading-relaxed font-medium px-4">
+                  Envie uma imagem de referência pelo WhatsApp para personalizarmos seu pedido.
+                </p>
+              </motion.div>
+            )}
           </AnimatePresence>
-          <div className="mt-12 flex items-center gap-4">
-            {step === 2 && <button onClick={() => setStep(1)} className="p-4 text-stone-400 hover:text-primary transition-colors" aria-label="Go back"><ArrowLeft size={24} /></button>}
-            <button onClick={step === 1 ? () => setStep(2) : handleFinalize} className="flex-1 py-4 bg-primary text-white rounded-full font-bold uppercase tracking-[0.4em] text-[10px] shadow-xl hover:bg-opacity-90 transition-all flex items-center justify-center gap-3 font-sans">
-              {step === 1 ? <>Selecionar Data <ArrowRight size={14} /></> : <>Finalizar Pedido <MessageCircle size={14} /></>}
+
+          {/* Navigation */}
+          <div className="mt-auto pt-6 md:pt-12 flex items-center gap-4">
+            {step > 1 && (
+              <button onClick={goBack} className="p-4 text-stone-400 hover:text-primary transition-colors" aria-label="Voltar">
+                <ArrowLeft size={24} />
+              </button>
+            )}
+            <button
+              onClick={step < 4 ? goNext : handleFinalize}
+              disabled={isNextDisabled}
+              className={cn(
+                "flex-1 py-3 rounded-full font-bold uppercase tracking-[0.2em] text-[10px] shadow-xl transition-all flex items-center justify-center gap-3 font-sans",
+                isNextDisabled
+                  ? "bg-stone-300 text-white cursor-not-allowed"
+                  : "bg-primary text-white hover:bg-opacity-90"
+              )}
+            >
+              {step < 4 ? <>Próximo <ArrowRight size={14} /></> : <>Finalizar Pedido <MessageCircle size={14} /></>}
             </button>
           </div>
         </motion.div>

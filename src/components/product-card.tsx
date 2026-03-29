@@ -1,24 +1,29 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import type { Product } from '@/lib/constants';
 import { StandardButton } from '@/components/ui/standard-button';
 
 type ProductCardProps = {
   product: Product;
-  onSelect: (product: Product) => void;
 };
 
-export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
+export const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <div className="bg-white rounded-xl border border-primary/10 hover:border-primary hover:shadow-2xl transition-all duration-500 flex flex-col text-left h-full select-none group">
+    <Link
+      href={`/produto/${product.id}`}
+      className="bg-white rounded-2xl border border-primary/10 hover:border-primary hover:shadow-2xl transition-all duration-500 flex flex-col text-left h-full select-none group"
+    >
       <div className="p-2 pb-0">
-        <div className="relative w-full aspect-square rounded-lg overflow-hidden">
-          <Image 
-            src={product.image} 
-            alt={product.shortDesc} 
+        <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
+          <Image
+            src={product.image}
+            alt={product.shortDesc}
             fill
             sizes="(max-width: 640px) 50vw, 33vw"
-            className="object-cover" 
+            quality={75}
+            loading="lazy"
+            className="object-cover"
           />
         </div>
       </div>
@@ -26,14 +31,14 @@ export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
         {product.name && <h3 className="font-headline text-xl sm:text-2xl lg:text-3xl text-primary mb-2 leading-tight tracking-wide">{product.name}</h3>}
         <p className="text-primary/60 text-xs font-body mb-6 md:mb-10 leading-relaxed line-clamp-2">{product.shortDesc}</p>
         <div className="mt-auto w-full flex justify-center">
-          <StandardButton 
-            onClick={() => onSelect(product)} 
-            className="w-full text-[8px] tracking-[0.2em] py-3 px-2 sm:text-[9px] sm:tracking-[0.1em] sm:py-2 sm:px-4 md:text-[10px] md:tracking-[0.2em] md:py-3 md:px-10"
+          <StandardButton
+            className="w-full"
+            isNarrow
           >
             VER DETALHES
           </StandardButton>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

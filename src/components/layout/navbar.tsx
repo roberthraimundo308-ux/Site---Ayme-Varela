@@ -36,8 +36,8 @@ export const Navbar = () => {
           height={512}
           className="h-40 md:h-52 w-auto object-contain drop-shadow-md"
           priority
-          quality={100}
-          sizes="512px"
+          quality={75}
+          sizes="256px"
         />
       </div>
       <nav className={cn("w-full transition-all duration-500 ease-in-out border-b z-50 sticky top-0", scrolled ? "bg-white/20 backdrop-blur-lg border-stone-200/30 shadow-sm py-4" : "bg-transparent border-transparent py-6")}>
@@ -49,7 +49,7 @@ export const Navbar = () => {
               width={128}
               height={128}
               className="h-10 md:h-12 w-auto object-contain"
-              quality={100}
+              quality={75}
               sizes="128px"
             />
           </div>
@@ -79,7 +79,7 @@ export const Navbar = () => {
                                 width={128}
                                 height={128}
                                 className="h-10 w-auto object-contain"
-                                quality={100}
+                                quality={75}
                             />
                         </div>
                         <div className="flex flex-col items-center justify-center flex-grow gap-8 text-sm tracking-[0.3em] font-medium uppercase text-primary font-sans">

@@ -65,7 +65,7 @@ export const ProductDetailModal = ({ product, onClose }: ProductDetailModalProps
               className="w-full h-auto object-contain rounded-t-2xl md:rounded-l-2xl"
               key={currentIdx}
               sizes="50vw"
-              quality={100}
+              quality={75}
             />
 
           {product.gallery.length > 1 && (

@@ -14,7 +14,7 @@ const TestimonialsColumn = ({ images, duration = 15, className }: { images: stri
       className="flex flex-col gap-8 pb-8 bg-transparent"
     >
       {[...images, ...images].map((img, i) => (
-        <div key={`testi-${i}`} className="rounded-2xl border border-stone-100 bg-white shadow-lg shadow-primary/5 overflow-hidden w-full">
+        <div key={`testi-${i}`} className="rounded-2xl border border-primary/10 bg-white shadow-md overflow-hidden w-full">
           <Image 
             src={img} 
             alt="WhatsApp testimonial screenshot" 
@@ -29,8 +29,8 @@ const TestimonialsColumn = ({ images, duration = 15, className }: { images: stri
   </div>
 );
 
-export const Testimonials = () => (
-  <section id="depoimentos" className="bg-[#FAF7F2] py-24 relative overflow-hidden border-y border-stone-100">
+export const Testimonials = ({ className }: { className?: string }) => (
+  <section id="depoimentos" className={`bg-[#FAF7F2] py-24 relative overflow-hidden border-y border-stone-100 min-h-screen md:min-h-0 flex flex-col justify-center ${className ?? ''}`}>
     <div className="container z-10 mx-auto px-4 text-center">
       <SectionTitle title="Depoimentos" subtitle="O que dizem sobre nós" />
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[850px] overflow-hidden">
